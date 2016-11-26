@@ -1,0 +1,588 @@
+
+/********************************************************************************
+* Sidebar
+*********************************************************************************/
+
+.side .spacer {margin: 0;}
+.ad300x250, #ad_main_top { margin: 13px 0; }
+
+.titlebox {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.titlebox > * {
+    -webkit-order: 7;
+    order: 7;
+}
+
+.titlebox > .subButtons, .titlebox > .fancy-toggle-button.subscribe-button.toggle {
+    -webkit-order: 1;
+    order: 1;
+}
+
+.titlebox > h1 {
+    display: block;
+    position: absolute;
+    top: 236px;
+    right: 40px;
+    width: 320px;
+    z-index: 99;
+    height: 58px;
+}
+
+.titlebox>h1>a {
+    background: url(%%spritesheet%%) -44px -17px;
+    display: block;
+    font-size: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.titlebox>h1:after {
+    position: absolute;
+    top: 100%;
+    content: '';
+    display: block;
+    left: 30px;
+    right: 30px;
+    width: 200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #cdd2d3;
+}
+
+.side .bottom, .sidebox.create .spacer {
+    display: none;
+}
+
+/* search
+--------------------------------------------------------------------------------*/
+.side #search {
+    position: absolute;
+    top: 185px;
+    z-index: 500;
+}
+
+#search input[type=text] {
+    border: 1px solid #ccd;
+    border-radius: 3px;
+}
+.side #search input[type=text] {
+    border-color: transparent;
+    background: transparent;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.side #search input[type=text]:hover {
+    background: rgba(255,255,255,0.4);
+}
+
+#search input[type=text]:hover:focus,
+#search input[type=text]:focus,
+#search input[type=text]:active {
+    background: white;
+    outline: 0;
+    box-shadow: 0 0px 1px 0 rgba(0,0,0,0.14), 0 1px 1px 0 rgba(0,0,0,0.1);
+}
+
+#search input[type=submit] {
+    background-image: none;
+}
+
+#searchexpando {
+    background: white;
+    border: 0;
+    box-shadow: 0 1px 2px rgba(0,0,0,.25),0 0 1px rgba(0,0,0,.35);
+    color: #4c4c4c;
+    position: relative;
+    margin-top: 15px !important;
+    height: 83px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    overflow: visible !important;
+}
+#searchexpando:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    -webkit-transform: rotate(45deg) translate(5px,5px);
+    transform: rotate(45deg) translate(5px,5px);
+    box-shadow: -1px -1px 1px -1px rgba(0,0,0,.4);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 100%;
+    margin-bottom: -2px;
+}
+
+/* linkinfo
+--------------------------------------------------------------------------------*/
+.linkinfo {
+    margin-top: 20px;
+    border: 0;
+    padding: 10px;
+    font-family: Segoe,"Segoe UI",Verdana,Arial,sans-serif;
+}
+
+.linkinfo .date {
+    text-align: center;
+    color: rgba(0,0,0,0.6)
+}
+
+.linkinfo .date:after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    margin: 10px auto 5px;
+    background: rgba(0,0,0,0.08);
+}
+
+.linkinfo .score, .linkinfo .totalvotes {
+    display: block;
+    width: 175px;
+    margin: 0 auto;
+}
+
+.linkinfo .shortlink {
+    font-size: 0;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.linkinfo .shortlink input {
+    border: 1px solid #dfe0e4;
+    border: 0;
+    background: rgba(0,0,0,0.06);
+    padding: 5px 8px;
+    font-size: 11px;
+    box-sizing: border-box;
+}
+
+/* submit buttons
+--------------------------------------------------------------------------------*/
+.morelink .nub {
+    display: none;
+}
+
+.submit-text .morelink, .res.res-nightmode .submit-text .morelink, .res.res-nightmode .submit-text .morelink:hover {
+    position: absolute;
+    top: 354px;
+    right: 80px;
+    z-index: 99;
+    width: 240px;
+    margin: 0 auto;
+    
+    background-image: none!important;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    /* border-radius: 5px; */
+    
+    font-family: Segoe,"Segoe UI",Verdana,Arial,sans-serif;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    font-weight: normal;
+    
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #f1c40f;
+    border: 0;
+    border-bottom: 2px solid #e2b607;
+    cursor: pointer;
+    box-shadow: inset 0 -2px #e2b607;
+}
+
+.submit-text .morelink:active {
+    border-bottom-width: 1px;
+    margin-top: 2px;
+}
+
+.morelink a {
+    color: inherit;
+}
+
+.submit-text .morelink a {
+    font-size: 0;
+}
+
+.submit-text .morelink a:before {
+    content: 'Submit a LPT';
+    font-size: 17px;
+}
+
+.submit.submit-link .morelink {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+    border-radius: 3px;
+    max-width: 190px;
+    margin: 0 auto;
+    line-height: 36px;
+    height: 36px;
+    box-sizing: border-box;
+
+    background: transparent;
+    border: 0;
+    color: rgba(0,0,0,0.55);
+    border: 1px solid rgba(0,0,0,0.12);
+    max-width: 210px;
+    line-height: 32px;
+    height: 32px;
+}
+
+.submit.submit-link .morelink:hover {
+    box-shadow: 0 0 15px 4px rgba(170,170,170,0.5);
+}
+
+.submit.submit-link .morelink:active {
+    box-shadow: 0 0 15px 1px rgba(170,170,170,0.5);
+}
+
+.submit.mod-override .morelink:hover a:after {
+    opacity: 1;
+}
+
+.submit.submit-link .morelink a {
+    font-size: 10.5px !important;
+    color: inherit;
+}
+
+/* sidecontentbox
+--------------------------------------------------------------------------------*/
+
+.sidecontentbox .content {
+    background: #f4f7f8;
+    border: 0;
+    padding: 10px;
+}
+
+.icon-menu a {
+    background: transparent;
+}
+
+.sidecontentbox .title {
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.sidecontentbox a.helplink {
+    display: block;
+    float: none;
+}
+
+/* Recently Viewed Links
+--------------------------------------------------------------------------------*/
+.gadget .reddit-entry .linkflairlabel {
+    position: static;
+    padding: 0 4px;
+    line-height: 17px;
+    height: 17px;
+    border-radius: 0;
+    background: #ddd;
+    margin-top: 5px;
+}
+
+.gadget .reddit-link-title {display: block;}
+.gadget .reddit-entry br {display: none;}
+.gadget .linkflairlabel {float: left;}
+
+.gadget small {
+    margin-top: 6px;
+    display: inline-block;
+}
+.gadget small .score {
+    margin-left: 0;
+}
+
+/* RES sr toggle
+--------------------------------------------------------------------------------*/
+
+form.toggle.res-sr-style-toggle {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.res .res-sr-style-toggle label {
+    color: rgba(0,0,0,0.35);
+}
+
+.res .res-sr-style-toggle input[type=checkbox] {
+    display: none;
+}
+
+.res .res-sr-style-toggle label:before {
+    content: '?';
+    display: inline-block;
+    font-weight: bold;
+    height: 16px;
+    width: 16px;
+    line-height: 16px;
+    text-align: center;
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+/* subscriber info
+--------------------------------------------------------------------------------*/
+
+.titlebox > .subscribers, .titlebox > .users-online {
+    display: block;
+    padding: 0;
+    color: #333;
+    box-sizing: border-box;
+    font-family: "Segoe UI",Segoe,Roboto,"Helvetica Neue",Helvetica,"Calibri Light",Calibri,sans-serif;
+    font-size: 13px;
+}
+
+.titlebox > .subscribers {
+    font-size: 15px;
+    position: absolute;
+    font-weight: bold;
+    color: #c1c7c8;
+    top: 303px;
+    width: 310px;
+    text-align: center;
+}
+.titlebox > .users-online {
+    margin-bottom: 10px;
+    margin-top: 2px;
+    font-style: italic;
+}
+.users-online:before { display: none; }
+
+/* sub buttons
+--------------------------------------------------------------------------------*/
+
+.fancy-toggle-button.subscribe-button, .subButtons {
+    margin: 0;
+    padding: 8px 0 10px 0;
+    text-align: center;
+}
+
+.subButtons {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* RES buttons */
+
+.res .res-fancy-toggle-button {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    color: #767676;
+    padding: 0 8px;
+    border: 0;
+    border-radius: 2px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    border: 1px solid;
+    background: transparent;
+}
+
+.res .res-fancy-toggle-button {
+    margin-left: 5px;
+}
+
+.RESshortcutside.remove, .RESDashboardToggle.remove {
+    border-color: #b44 !important;
+    color: #b44 !important;
+}
+
+.RESshortcutside, .RESDashboardToggle {
+    border-color: #79B54F !important;
+    color: #79B54F !important;
+}
+
+/* misc */
+
+.titlebox form.flairtoggle, .titlebox form.flairtoggle + .tagline {
+    display: none;
+}
+
+.titlebox form.leavecontributor-button:before, .titlebox .leavemoderator:before {
+    display: none;
+}
+
+/* subscribe button */
+
+.fancy-toggle-button.subscribe-button.toggle {
+    width: 240px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.fancy-toggle-button.subscribe-button.toggle a.option.active {
+    display: block;
+    position: relative;
+    width: 240px;
+    margin: 0 auto;
+    line-height: 40px;
+    height: 40px;
+    padding: 0;
+    
+    text-align: center;
+    font-family: Segoe,"Segoe UI",Verdana,Arial,sans-serif;
+    font-size: 18px;
+    
+    color: white;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    font-weight: normal;
+    
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    border: 0;
+    cursor: pointer;
+}
+
+.fancy-toggle-button.subscribe-button.toggle a.option.active.add {
+    background: #2ecc71;
+    border-bottom: 2px solid #28be68;
+    -webkit-box-shadow: inset 0 -2px #28be68;
+    box-shadow: inset 0 -2px #28be68;
+}
+
+.fancy-toggle-button.subscribe-button.toggle a.option.active.remove {
+    background: #c0392b;
+    border-bottom: 2px solid #b53224;
+    -webkit-box-shadow: inset 0 -2px #b53224;
+    box-shadow: inset 0 -2px #b53224;
+}
+
+.fancy-toggle-button.subscribe-button.toggle a.option.active:active {
+    border-bottom-width: 1px;
+    margin-top: 2px;
+}
+
+/* sidebar common styles
+--------------------------------------------------------------------------------*/
+.side .md h1 {
+    border-bottom: 2px solid #7A8589;
+    color: #7A8589;
+    font-size: 14px;
+    padding: 4px 0;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.side .md p {
+    line-height: 26px;
+    color: #767676;
+}
+
+/* sidebar rules
+--------------------------------------------------------------------------------*/
+.side .md > ol {
+    counter-reset: siderules;
+    list-style: none;
+    padding: 0;
+    font-family: Calibri, Segoe, "Segoe UI", Verdana, Arial, sans-serif;
+}
+
+.side .md > ol li {
+    background: #f4f8ff;
+    border-bottom: 1px solid hsla(218,100%,93%,1);
+    padding: 5px 10px 5px  40px;
+    position: relative;
+    font-size: 13px;
+}
+
+.side .md > ol li:before {
+    counter-increment: siderules;
+    content: counter(siderules);
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    font-size: 11px;
+    height: 18px;
+    line-height: 18px;
+    width: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: hsla(218,65%,70%,1);
+    border-radius: 50%;
+    background: hsla(218,100%,96%,1);
+}
+
+.side .md > ol li p, .side .md > ul li p {
+    line-height: 20px;
+}
+
+
+/* sidebar lists
+--------------------------------------------------------------------------------*/
+.side .md > ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side .md > ul li {
+    background: #f4f8ff;
+    border-bottom: 1px solid hsla(218,100%,93%,1);
+    padding: 6px 10px 6px 15px;
+    position: relative;
+    font-size: 11px;
+    line-height: 20px;
+    color: #565656;
+}
+
+/* sidebar stuff and ban policy
+--------------------------------------------------------------------------------*/
+.side .md > h1 + p + ul + p {
+    background: #f5f5f5;
+    /* border: 1px solid #e3e3e3; */
+    padding: 6px 14px 6px 14px;
+    border-radius: 3px;
+    background: #ffc;
+    /* border: 1px solid #e6e68e; */
+    line-height: 18px;
+    font-size: 11.5px;
+}
+
+.side .md > ul + p + h1 + p {
+    font-size: 11.5px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.side .md > ul + p + h1 + p + p {
+    background: hsla(0,64%,96%,1);
+    line-height: 18px;
+    font-size: 11.5px;
+    padding: 6px 14px 6px 14px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.side .md > ul + p + h1 + p + p + p {
+    font-size: 11px;
+    line-height: 18px;
+}

@@ -1,0 +1,269 @@
+.res.res-nightmode body,
+.res.res-nightmode body:before,
+.res-nightmode #header {
+    background: #333645;
+}
+
+.res.res-nightmode #sr-header-area,
+.res.res-nightmode #sr-header-area,
+.res.res-nightmode #sr-header-area a,
+.res.res-nightmode #sr-header-area div[id^=RESShortcuts],
+.res.res-nightmode #header-bottom-right,
+.res.res-nightmode #header-bottom-right .user,
+.res.res-nightmode #header-bottom-right a,
+.res.res-nightmode #userbarToggle {
+    background: #1E202C;
+    color: rgba(255,255,255,0.3);
+}
+    
+.res.res-nightmode .pref-lang:after {
+    background-position: -8px -146px;
+}
+.res.res-nightmode #modmail.nohavemail:after {
+    background-position: -9px -116px;;
+}
+.res.res-nightmode #new_modmail.nohavemail:after {
+    background-position: -9px -176px;
+}
+.res.res-nightmode #mail.nohavemail:after {
+    background-position: -8px -31px;
+}
+.res.res-nightmode #RESAccountSwitcherIcon:after {
+    background-position: -8px -56px;
+}
+
+.res.res-nightmode .gearIcon:after {
+    color: white;
+}
+
+.res.res-nightmode #header-bottom-left:before {
+    background: #1E202C;
+}
+
+.res.res-nightmode #header-img-a {
+    background: url(%%snoo-white%%) no-repeat center 4px / 60%;
+}
+
+.res.res-nightmode #header .tabmenu li a {
+    color: hsla(230,15%,60%,1);
+}
+
+.res.res-nightmode .content[role=main],
+.res.res-nightmode .side {
+    border-top-color: #1E202C;
+}
+
+.res.res-nightmode .content[role=main] {
+    background: transparent;
+}
+
+.res.res-nightmode .side,
+.res.res-nightmode .side .sidebox.submit,
+.res.res-nightmode .side .spacer .titlebox .redditname,
+.res.res-nightmode .titlebox,
+.res.res-nightmode .sidecontentbox {
+    background: hsla(230,15%,16%,1);
+    border-left: 0;
+    border-bottom: 0;
+    border-right: 0;
+}
+
+.res.res-nightmode .sidecontentbox .content {
+    background: hsla(230,15%,18%,1);
+}
+
+.res.res-nightmode .side .md ul li, .res.res-nightmode .side .md ol li {
+    background: hsla(230,15%,18%,1);
+    border-bottom-color: hsla(230,15%,25%,1);
+    color: hsla(230,15%,60%,1);
+}
+
+.res.res-nightmode .side .md>ol li:before {
+    background: hsla(230,15%,20%,1);
+    color: hsla(230,15%,60%,1);
+}
+
+.res.res-nightmode .side .md p {
+    color: hsla(230,15%,70%,1);
+}
+
+.res.res-nightmode .side .md h1 {
+    color: hsla(230,15%,60%,1);
+    border-bottom-color: hsla(230,15%,60%,1);
+}
+
+.res.res-nightmode .side .md>h1+p+ul+p {
+    background: hsla(60,100%,90%,0.04);
+}
+
+.res.res-nightmode .side .md>ul+p+h1+p+p {
+    background: hsla(0,64%,96%,0.04);
+}
+
+.res-nightmode .icon-menu a,
+.res-nightmode .side .leavemoderator,
+.res-nightmode .side .leavecontributor-button,
+.res-nightmode .side .titlebox,
+.res-nightmode .side .spacer .titlebox .redditname,
+.res-nightmode .side .titlebox .flairtoggle,
+.res-nightmode .side .usertext-body .md ol,
+.res-nightmode .side .usertext-body .md ol ol,
+.res-nightmode .side .usertext-body .md ol ol li,
+.res-nightmode .modactionlisting table *,
+.res-nightmode .side .recommend-box .rec-item {
+    background: hsla(230,15%,16%,1);
+    color: rgba(255,255,255,0.5);
+}
+
+.res.res-nightmode .submit-text .morelink a:before {
+    color: white;
+}
+
+.res.res-nightmode .linkflairlabel {
+    background: transparent;
+}
+
+.res.res-nightmode .link, .res.res-nightmode .link.linkflair, .res.res-nightmode .link.last-clicked {
+    background: hsla(230,15%,16%,1);
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 0;
+}
+
+.res.res-nightmode .link:not(.linkflair) {
+    border-left-color: hsla(230,15%,20%,1);
+}
+
+.res.res-nightmode .thing.link.promoted.promotedlink {
+    background: hsla(230,15%,16%,1);
+}
+
+.res.res-nightmode .link:not(.promoted) .midcol:after {
+    background: hsla(230,15%,15%,1);
+}
+
+.res.res-nightmode .link .score {
+    color: hsla(230,15%,54%,1);
+}
+
+.res.res-nightmode .RESUserTag .userTagLink:after {
+    color: hsla(230,15%,54%,1);
+}
+.res.res-nightmode body.mod-toolbox .tb-bracket-button {
+    background: hsla(230,15%,17%,1);
+    color: hsla(230,15%,54%,1);
+}
+
+.res.res-nightmode .userattrs>a {
+    color: white;
+}
+
+
+/* footer
+--------------------------------------------------------------------------------*/
+.res.res-nightmode .footer .col li:not(.title) a,
+.res.res-nightmode a {
+    color: #548dc6;
+}
+.res.res-nightmode .footer .col li.title {
+    color: rgba(255,255,255,0.55);
+}
+.res.res-nightmode .bottommenu,
+.res.res-nightmode .bottommenu a {
+    color: rgba(255,255,255,0.25);
+}
+
+/* ------------------------------- */
+
+.res.res-nightmode .panestack-title,
+.res.res-nightmode .commentarea .menuarea,
+.res.res-nightmode .commentarea > .usertext,
+.res.res-nightmode .gold-accent.comment-visits-box {
+    background: hsla(230,15%,16%,1);
+    border-left: 0;
+    border-right: 0;
+    border-color: #1E202C;
+}
+
+.res.res-nightmode .panestack-title,
+.res.res-nightmode .comment-permalink-page .commentarea > .menuarea {
+    border-top: 6px solid #1E202C;
+}
+
+.res.res-nightmode .commentarea .comment .comment,
+.res.res-nightmode .commentarea .comment .comment .comment .comment,
+.res.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment,
+.res.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment,
+.res.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment
+{
+    background-color: hsla(230,15%,18%,1) !important;
+    border: 0 !important;
+}
+
+.res.res-nightmode .commentarea .comment,
+.res.res-nightmode .commentarea .comment .comment .comment,
+.res.res-nightmode .commentarea .comment .comment .comment .comment .comment,
+.res.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment,
+.res.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.res.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment
+{
+    background-color: hsla(230,15%,16%,1) !important;
+    border: 0 !important;
+}
+
+.res.mod-toolbox.res-nightmode .comment.spam > .child {
+    background: transparent;
+}
+
+.res.res-nightmode #REScommentNavToggle div {
+    background: hsla(230,15%,18%,1);
+    border-color: #1E202C;
+}
+.res.res-nightmode #REScommentNavToggle:hover span {
+    background: hsla(230,15%,18%,1);
+    border-color: #1E202C;
+}
+
+.res.res-nightmode .commentarea>.sitetable>.comment:before,
+.res.res-nightmode #bottom-comments>.sitetable>.comment:before {
+    background: hsla(230,15%,35%,1);
+}
+
+.res.res-nightmode .RES-keyNav-activeElement,
+.res.res-nightmode .RES-keyNav-activeElement .md-container {
+    background: transparent !important;
+}
+
+.res.res-nightmode .usertext-edit textarea {
+    background: hsla(230,15%,20%,1);
+    border-color: hsla(230,15%,15%,1);
+}
+
+.res.res-nightmode .res .markdownEditor {
+    background: hsla(230,15%,20%,1);
+    border-color: hsla(230,15%,15%,1);
+}
+
+.res.res-nightmode .markdownEditor .edit-btn:not(.btn-macro) {
+    background-color: hsla(230,15%,28%,1);
+}
+
+.res-nightmode .side .linkinfo {
+    background-color: hsla(230,15%,18%,1);
+}
+
+.res.res-nightmode .submit-page ul.tabmenu.formtab {
+    background: hsla(230,15%,18%,1);
+}
+
+.res.res-nightmode .submit-page .submit.content {
+    background: transparent;
+}
+
+.res.res-nightmode .content.submit .roundfield {
+    background: hsla(230,15%,18%,1);
+}
+
+.res.res-nightmode .submit-page .roundfield>.title {
+    color: hsla(230,15%,55%,1);
+}

@@ -1,0 +1,42 @@
+/********************************************************************************
+* Flair-specific banners
+*********************************************************************************/
+/*
+.comments-page .link.linkflair:before, .comments-page .link.linkflair[data-rank]:before {
+    content: '';
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: auto;
+    bottom: 100%;
+    right: 0;
+    left: -2px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+
+.comments-page .link.RES-keyNav-activeThing.linkflair:before,
+.comments-page .link.RES-keyNav-activeThing.linkflair[data-rank]:before {
+    right: -2px;
+}
+
+.comments-page .link.linkflair-computers:before, .comments-page .link.linkflair-computers[data-rank]:before {
+    content: 'Computers';
+    font-size: 15px;
+    font-family: Segoe,"Segoe UI",Verdana,Arial,sans-serif;
+    background: url(%%macbook-apple-imac-computer-39284-small%%) no-repeat center center / cover;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+.comments-page .link.linkflair {
+    margin-top: 99px;
+}
+
+.comments-page .link.linkflair p.title .linkflairlabel,
+.comments-page .link.linkflair a.title:before {
+    display: none;
+}
+*/

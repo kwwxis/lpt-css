@@ -1,0 +1,82 @@
+
+
+/********************************************************************************
+* Layout
+*********************************************************************************/
+.side {
+    margin: 0 1px 0 0;
+    padding: 0 10px;
+    padding-top: 167px;
+    border: 1px solid;
+    margin-top: 5px;
+    border-top-width: 6px;
+    border-top-color: hsla(195,22%,91%,1);
+    border-left-color: #dfe0e4;
+    border-right-color: #dfe0e4;
+    border-bottom-color: #d0d1d5;
+}
+
+.content[role=main] {
+    margin: 0 0 0 1px;
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 332px;
+    border-top: 6px solid hsla(195,22%,91%,1);
+    margin-top: 5px;
+}
+
+/********************************************************************************
+* Listings
+*********************************************************************************/
+#noresults {
+    font-size: 0;
+    display: block;
+    width: 200px;
+    height: 200px;
+    background: url(%%nothing-here%%) no-repeat center / contain;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.content[role=main] > .menuarea {
+    margin: 0;
+    background: white;
+    margin-bottom: 10px;
+    border: 0;
+    /* box-shadow: 0 1px 2px rgba(0,0,0,.1); */
+    padding: 8px 10px;
+    border-left: 1px solid #dfe0e4;
+    border-right: 1px solid #dfe0e4;
+    border-bottom: 1px solid #d0d1d5;
+}
+
+.content[role=main] > .menuarea .spacer {
+    margin-bottom: 0;
+}
+
+/********************************************************************************
+* Link Ads
+*********************************************************************************/
+#siteTable_organic {
+    background-color: transparent !important;
+    overflow: visible;
+}
+
+.organic-listing .link {
+    padding-right: 0 !important;
+}
+
+.organic-listing .help {
+    right: 15px;
+    bottom: 5px;
+}
+.organic-listing .sponsored-tagline {
+    display: none; /* doesn't line up properly */
+}
+.organic-listing .help:before {
+    content: 'promoted post ';
+    color: #808080;
+    margin-right: 4px;
+    font-weight: bold;
+    pointer-events: none;
+}

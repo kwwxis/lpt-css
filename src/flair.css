@@ -1,0 +1,544 @@
+/********************************************************************************
+* Link Flair
+*********************************************************************************/
+.linkflairlabel, .res .res-flairSearch.linkflairlabel {
+    display: block;
+    max-width: none;
+    background: transparent;
+    border: 0;
+    color: #656565;
+    font-size: 10px;
+    margin-bottom: 0;
+    position: absolute;
+    top: 5px;
+}
+.link.linkflair p.title {
+    margin-top: 9px;
+}
+
+.link.linkflair:after {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: #ccc;
+    border-radius: 50%;
+    background-image: url(%%spritesheet%%);
+    position: absolute;
+    left: -13px;
+    bottom: 0;
+    top: 0;
+    margin: auto 0;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    z-index: 3;
+}
+.link.linkflair .midcol:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: -14px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    border-radius: 50%;
+    background: white;
+    border: 1.5px solid black;
+    -webkit-transform: scale(0.92);
+    transform: scale(0.92);
+    z-index: 2;
+}
+/*
+.comments-page .link.linkflair .midcol:before {
+    margin-top: 86.5px;
+}
+.comments-page .link.linkflair:after {
+    margin-top: 88px;
+}*/
+
+.link .linkflairlabel {
+    float: left;
+}
+
+.gadget .linkflairlabel {
+    margin: 0;
+    padding: 0px 5px;
+    font-size: 10px;
+    background: #aaa;
+    color: #535353;
+    border-radius: 3px;
+    margin-right: 5px;
+    display: inline-block;
+    line-height: 18px;
+    height: 18px;
+}
+
+.gadget .linkflairlabel:before {
+    display: none;
+}
+
+.reddit-link .linkflairlabel ~ .reddit-link-title:before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.link.linkflair-modpick:after {
+    background-color: #FADB04;
+}
+
+/* --- linkflairs start --- */
+
+/* animals */
+.link.linkflair-animals:after, .flairselector .linkflair-animals, .flairselector .linkflair-animals:before {
+    background-position: -409.5px -169.5px;
+    background-color: #795548;
+}
+.link.linkflair-animals, .link.linkflair-animals .midcol:before {
+    border-color: #795548;
+}
+.res .link.linkflair-animals > .parent:after {
+    border-left-color: #795548;
+}
+.link.linkflair-animals .linkflairlabel {
+    color: #795548;
+}
+.link.linkflair-animals {
+    box-shadow: 0 4px 2px -2px hsla(16,25%,38%,0.2);
+}
+
+/* automobile */
+.link.linkflair-automobile:after, .flairselector .linkflair-automobile, .flairselector .linkflair-automobile:before {
+    background-position: -451.5px -169.5px;
+    background-color: #3F51B5;
+}
+.link.linkflair-automobile, .link.linkflair-automobile .midcol:before {
+    border-color: #3F51B5;
+}
+.res .link.linkflair-automobile > .parent:after {
+    border-left-color: #3F51B5;
+}
+.link.linkflair-automobile .linkflairlabel {
+    color: #3F51B5;
+}
+.link.linkflair-automobile {
+    box-shadow: 0 4px 2px -2px hsla(231, 48%, 48%,0.2);
+}
+
+/* money */
+.link.linkflair-money:after, .flairselector .linkflair-money, .flairselector .linkflair-money:before {
+    background-position: -494px -169.5px;
+    background-color: #4CAF50;
+}
+.link.linkflair-money, .link.linkflair-money .midcol:before {
+    border-color: #4CAF50;
+}
+.res .link.linkflair-money > .parent:after {
+    border-left-color: #4CAF50;
+}
+.link.linkflair-money .linkflairlabel {
+    color: #4CAF50;
+}
+.link.linkflair-money {
+    box-shadow: 0 4px 2px -2px hsla(122, 39%, 49%,0.2);
+}
+
+/* clothing */
+.link.linkflair-clothing:after, .flairselector .linkflair-clothing, .flairselector .linkflair-clothing:before {
+    background-position: -535.5px -169px;
+    background-color: #673AB7;
+}
+.link.linkflair-clothing, .link.linkflair-clothing .midcol:before {
+    border-color: #673AB7;
+}
+.res .link.linkflair-clothing > .parent:after {
+    border-left-color: #673AB7;
+}
+.link.linkflair-clothing .linkflairlabel {
+    color: #673AB7;
+}
+.link.linkflair-clothing {
+    box-shadow: 0 4px 2px -2px hsla(262, 52%, 47%,0.2);
+}
+
+/* school */
+.link.linkflair-school:after, .flairselector .linkflair-school, .flairselector .linkflair-school:before {
+    background-position: -577.5px -169px;
+    background-color: #FF5722;
+}
+.link.linkflair-school, .link.linkflair-school .midcol:before {
+    border-color: #FF5722;
+}
+.res .link.linkflair-school > .parent:after {
+    border-left-color: #FF5722;
+}
+.link.linkflair-school .linkflairlabel {
+    color: #FF5722;
+}
+.link.linkflair-school {
+    box-shadow: 0 4px 2px -2px hsla(14, 100%, 57%,0.1);
+}
+
+/* computers */
+.link.linkflair-computers:after, .flairselector .linkflair-computers, .flairselector .linkflair-computers:before {
+    background-position: -619.5px -169.5px;
+    background-color: #536DFE;
+}
+.link.linkflair-computers, .link.linkflair-computers .midcol:before {
+    border-color: #536DFE;
+}
+.res .link.linkflair-computers > .parent:after {
+    border-left-color: #536DFE;
+}
+.link.linkflair-computers .linkflairlabel {
+    color: #536DFE;
+}
+.link.linkflair-computers {
+    box-shadow: 0 4px 2px -2px hsla(231, 99%, 66%,0.2);
+}
+
+/* career */
+.link.linkflair-career:after, .flairselector .linkflair-career, .flairselector .linkflair-career:before {
+    background-position: -409.5px -201px;
+    background-color: #9C27B0;
+}
+.link.linkflair-career, .link.linkflair-career .midcol:before {
+    border-color: #9C27B0;
+}
+.res .link.linkflair-career > .parent:after {
+    border-left-color: #9C27B0;
+}
+.link.linkflair-career .linkflairlabel {
+    color: #9C27B0;
+}
+.link.linkflair-career {
+    box-shadow: 0 4px 2px -2px hsla(291, 64%, 42%,0.2);
+}
+
+/* electronics */
+.link.linkflair-electronics:after, .flairselector .linkflair-electronics, .flairselector .linkflair-electronics:before {
+    background-position: -451px -201px;
+    background-color: #2196F3;
+}
+.link.linkflair-electronics, .link.linkflair-electronics .midcol:before {
+    border-color: #2196F3;
+}
+.res .link.linkflair-electronics > .parent:after {
+    border-left-color: #2196F3;
+}
+.link.linkflair-electronics .linkflairlabel {
+    color: #2196F3;
+}
+.link.linkflair-electronics {
+    box-shadow: 0 4px 2px -2px hsla(207, 90%, 54%,0.2);
+}
+
+/* entertainment */
+.link.linkflair-entertainment:after, .flairselector .linkflair-entertainment, .flairselector .linkflair-entertainment:before {
+    background-position: -493.5px -200px;
+    background-color: #00BCD4;
+}
+.link.linkflair-entertainment, .link.linkflair-entertainment .midcol:before {
+    border-color: #00BCD4;
+}
+.res .link.linkflair-entertainment > .parent:after {
+    border-left-color: #00BCD4;
+}
+.link.linkflair-entertainment .linkflairlabel {
+    color: #00BCD4;
+}
+.link.linkflair-entertainment {
+    box-shadow: 0 4px 2px -2px hsla(187, 100%, 42%,0.2);
+}
+
+/* travel */
+.link.linkflair-travel:after, .flairselector .linkflair-travel, .flairselector .linkflair-travel:before {
+    background-position: -536px -200px;
+    background-color: #009688;
+}
+.link.linkflair-travel, .link.linkflair-travel .midcol:before {
+    border-color: #009688;
+}
+.res .link.linkflair-travel > .parent:after {
+    border-left-color: #009688;
+}
+.link.linkflair-travel .linkflairlabel {
+    color: #009688;
+}
+.link.linkflair-travel {
+    box-shadow: 0 4px 2px -2px hsla(174, 100%, 29%,0.2);
+}
+
+/* food */
+.link.linkflair-food:after, .flairselector .linkflair-food, .flairselector .linkflair-food:before {
+    background-position: -577px -200px;
+    background-color: #FF9800;
+}
+.link.linkflair-food, .link.linkflair-food .midcol:before {
+    border-color: #FF9800;
+}
+.res .link.linkflair-food > .parent:after {
+    border-left-color: #FF9800;
+}
+.link.linkflair-food .linkflairlabel {
+    color: #FF9800;
+}
+.link.linkflair-food {
+    box-shadow: 0 4px 2px -2px hsla(36, 100%, 50%,0.13);
+}
+
+/* health */
+.link.linkflair-health:after, .flairselector .linkflair-health, .flairselector .linkflair-health:before {
+    background-position: -619.5px -199.5px;
+    background-color: #E91E63;
+}
+.link.linkflair-health, .link.linkflair-health .midcol:before {
+    border-color: #E91E63;
+}
+.res .link.linkflair-health > .parent:after {
+    border-left-color: #E91E63;
+}
+.link.linkflair-health .linkflairlabel {
+    color: #E91E63;
+}
+.link.linkflair-health {
+    box-shadow: 0 4px 2px -2px hsla(340, 82%, 52%,0.1);
+}
+
+/* home */
+.link.linkflair-home:after, .flairselector .linkflair-home, .flairselector .linkflair-home:before {
+    background-position: -409.5px -232px;
+    background-color: #8BC34A;
+}
+.link.linkflair-home, .link.linkflair-home .midcol:before {
+    border-color: #8BC34A;
+}
+.res .link.linkflair-home > .parent:after {
+    border-left-color: #8BC34A;
+}
+.link.linkflair-home .linkflairlabel {
+    color: #8BC34A;
+}
+.link.linkflair-home {
+    box-shadow: 0 4px 2px -2px hsla(88, 50%, 53%,0.2);
+}
+
+/* misc */
+.link.linkflair-misc:after, .flairselector .linkflair-misc, .flairselector .linkflair-misc:before {
+    background-position: -451.5px -232.5px;
+    background-color: #9E9E9E;
+}
+.link.linkflair-misc, .link.linkflair-misc .midcol:before {
+    border-color: #9E9E9E;
+}
+.res .link.linkflair-misc > .parent:after {
+    border-left-color: #9E9E9E;
+}
+.link.linkflair-misc .linkflairlabel {
+    color: #9E9E9E;
+}
+.link.linkflair-misc {
+    box-shadow: 0 4px 2px -2px hsla(0, 0%, 62%,0.2);
+}
+
+/* parenting */
+.link.linkflair-parenting:after, .flairselector .linkflair-parenting, .flairselector .linkflair-parenting:before {
+    background-position: -493.5px -230px;
+    background-color: #CDDC39;
+}
+.link.linkflair-parenting, .link.linkflair-parenting .midcol:before {
+    border-color: #CDDC39;
+}
+.res .link.linkflair-parenting > .parent:after {
+    border-left-color: #CDDC39;
+}
+.link.linkflair-parenting .linkflairlabel {
+    color: #CDDC39;
+}
+.link.linkflair-parenting {
+    box-shadow: 0 4px 2px -2px hsla(66, 70%, 54%,0.2);
+}
+
+/* productivity */
+.link.linkflair-productivity:after, .flairselector .linkflair-productivity, .flairselector .linkflair-productivity:before  {
+    background-position: -536px -232.5px;
+    background-color: #F44336;
+}
+.link.linkflair-productivity, .link.linkflair-productivity .midcol:before {
+    border-color: #F44336;
+}
+.res .link.linkflair-productivity > .parent:after {
+    border-left-color: #F44336;
+}
+.link.linkflair-productivity .linkflairlabel {
+    color: #F44336;
+}
+.link.linkflair-productivity {
+    box-shadow: 0 4px 2px -2px hsla(4, 90%, 58%,0.12);
+}
+
+/* requests */
+.link.linkflair-requests:after, .flairselector .linkflair-requests, .flairselector .linkflair-requests:before {
+    background-position: -619.5px -231.5px;
+    background-color: #607D8B;
+}
+.link.linkflair-requests, .link.linkflair-requests .midcol:before {
+    border-color: #607D8B;
+}
+.res .link.linkflair-requests > .parent:after {
+    border-left-color: #607D8B;
+}
+.link.linkflair-requests .linkflairlabel {
+    color: #607D8B;
+}
+.link.linkflair-requests {
+    box-shadow: 0 4px 2px -2px hsla(200, 18%, 46%,0.2);
+}
+
+/* social */
+.link.linkflair-social:after, .flairselector .linkflair-social, .flairselector .linkflair-social:before {
+    background-position: -579px -231.5px;
+    background-color: #03A9F4;
+}
+.link.linkflair-social, .link.linkflair-social .midcol:before {
+    border-color: #03A9F4;
+}
+.res .link.linkflair-social > .parent:after {
+    border-left-color: #03A9F4;
+}
+.link.linkflair-social .linkflairlabel {
+    color: #03A9F4;
+}
+.link.linkflair-social {
+    box-shadow: 0 4px 2px -2px hsla(199, 98%, 48%,0.15);
+}
+
+/********************************************************************************
+* Flair Selector
+*********************************************************************************/
+
+.flairselector, .flairselector.drop-choices.active {
+    box-shadow: 0 1px 2px rgba(0,0,0,.25),0 0 1px rgba(0,0,0,.35);
+    border: 0;
+}
+
+.flairselector {
+    position: fixed;
+}
+.flairselector .flairoptionpane {
+    max-height: 300px;
+}
+.flairselector ul {
+    width: 50% !important;
+    max-width: none;
+}
+.flairselector li {
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    transition: transform 200ms ease-out;
+    transform-origin: center center;
+    margin: 0;
+    margin-top: 3px;
+    width: 100% !important;
+    box-sizing: border-box;
+}
+.flairselector li:hover {
+    background: transparent;
+}
+.flairselector li.selected {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.flairselector .linkflair {
+    height: 28px;
+    box-sizing: border-box;
+    padding: 2px;
+    position: relative;
+}
+
+.flairselector .linkflair a {
+    display: none;
+}
+
+.flairselector .linkflair .linkflairlabel {
+    float: none;
+    font-family: "Segoe UI",Segoe,Roboto,"Helvetica Neue",Helvetica,"Calibri Light",Calibri,sans-serif;
+    color: white;
+    font-size: 14px;
+}
+
+.flairselector .linkflair:before {
+    content: '';
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-image: url(%%spritesheet%%);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    float: right;
+}
+.flairselector .flairselection .linkflair:before {
+    display: none;
+}
+
+.flairselector h2 {
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ff6961;
+}
+
+.flairselector form {
+    border-top: 0;
+    margin: -4px;
+    padding: 4px 8px;
+}
+.flairselector .flairselection {
+    position: relative;
+    margin-bottom: 5px;
+}
+.flairselector .flairremove {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    padding: 7px;
+    font-size: 0;
+}
+.flairselector .flairremove a {
+    color: #fff !important;
+    font-size: 10px;
+}
+
+.flairselector input[type=text] {
+    padding: 5px 6px;
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+}
+
+.flairselector button[type=submit] {
+    padding: 0 12px 0 12px;
+    background-color: #fff;
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+    color: #737373;
+    text-transform: capitalize;
+    font-weight: bold;
+    line-height: 28px;
+    height: 28px;
+    font-size: 12px;
+    transition: all 0.15s ease;
+}
+.flairselector button[type=submit]:hover {
+    box-shadow: 0 1px 0 0 rgba(0,0,0,0.27);
+    color: #4D5763;
+}
+
+.flairselector {
+    top: 10px !important;
+}

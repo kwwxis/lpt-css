@@ -1,0 +1,48 @@
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    padding: 0 40px;
+    background: #fcfcfb;
+}
+.sheets { margin-right: 0; }
+
+body {
+    background: #eee;
+}
+body:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: linear-gradient(0deg, #eee, #fcfcfb);
+    z-index: -1;
+}
+
+body > .debuginfo:before {
+    content: 'css by /u/kwwxis';
+    float: left;
+    color: rgba(0,0,0,0.35);
+    padding-left: 5px;
+}
+
+.author[href$="/user/kwwxis"]:after {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(%%spritesheet%%);
+    background-position: -111px -272px;
+    margin-bottom: -4px;
+    margin-left: 1px;
+    -webkit-transform: scale(0.7) rotateZ(0deg);
+    transform: scale(0.7) rotateZ(0deg);
+    transition: transform 400ms ease;
+}
+.author[href$="/user/kwwxis"]:hover:after {
+    -webkit-transform: scale(0.7) rotateZ(360deg);
+    transform: scale(0.7) rotateZ(360deg);
+}
