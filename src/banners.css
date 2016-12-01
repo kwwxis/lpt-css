@@ -40,3 +40,44 @@
     display: none;
 }
 */
+
+/********************************************************************************
+* No-Flair banners - reminder to flair!
+*********************************************************************************/
+
+.comments-page.post-submitter .link:not(.linkflair):before,
+.comments-page.post-submitter .link[data-rank]:not(.linkflair):before {
+    content: 'Thanks for submitting to LifeProTips. Please remember to flair your post or your post will be removed! You can do this by clicking the red "flair" button then choosing a category.';
+    display: block;
+    position: absolute;
+    top: auto;
+    bottom: 100%;
+    height: 60px;
+    margin-bottom: 6px;
+    box-sizing: border-box;
+    padding: 10px 20px 10px 80px;
+    font-size: 15px;
+    background: #f1c40f;
+    color: white;
+    font-family: "Segoe UI",Segoe,Roboto,"Helvetica Neue",Helvetica,"Calibri Light",Calibri,sans-serif;
+}
+
+.comments-page.post-submitter .link:not(.linkflair) {
+    margin-top: 70px;
+}
+
+.comments-page.post-submitter .link:not(.linkflair) .midcol:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: 17px;
+    left: 14px;
+    width: 40px;
+    height: 40px;
+    background: url(%%spritesheet%%) -727px -176px;
+    z-index: 5;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.6;
+}

@@ -272,7 +272,7 @@
     margin-left: 5px;
 }
 
-#mail.havemail {
+#mail.havemail, .res.res-nightmode #mail.havemail {
     background: #FF7500;
 }
 #mail:not(.havemail):hover    {
@@ -297,7 +297,8 @@
     top: 0;
     margin-bottom: 0;
 }
-#modmail.havemail, #new_modmail.havemail {
+#modmail.havemail, #new_modmail.havemail,
+.res.res-nightmode #modmail.havemail, .res.res-nightmode #new_modmail.havemail {
     background: #FF7500;
 }
 #modmail:after, #new_modmail:after {
@@ -330,6 +331,43 @@
     background-position: -9px -176px;
 }
 
+/* flat list
+--------------------------------------------------------------------------------*/
+
+#header-bottom-right > ul.flat-list {
+    height: 24px;
+}
+
+#header-bottom-right > ul.flat-list li {
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+#header-bottom-right > ul.flat-list li > a {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: center;
+    height: 24px;
+    width: 24px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+}
+
+
+#header-bottom-right > ul.flat-list li > a:hover {
+    background: rgba(0,0,0,0.06);
+}
+
 /* Preferences
 --------------------------------------------------------------------------------*/
 
@@ -349,15 +387,7 @@
     transform: scale(0.8);
 }
 .pref-lang {
-    display: inline-block;
-    position: relative;
     font-size: 0 !important;
-    width: 24px;
-    height: 24px;
-    top: -2px;
-}
-.pref-lang:hover {
-    background: rgba(0,0,0,0.06);
 }
 
 /* RES settings gear icon

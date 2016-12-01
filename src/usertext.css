@@ -47,7 +47,7 @@
 }
 
 .usertext .help-toggle a, .usertext a.reddiquette, .res .RESBigEditorPop {
-    color: rgba(0,0,0,0.6);
+    color: rgba(0,0,0,0.45);
 }
 
 .usertext .help-toggle:hover, .usertext a.reddiquette:hover, .res .RESBigEditorPop:hover {
@@ -300,4 +300,13 @@
 .md td {
     border-bottom: 1px solid #f0f0f0;
     padding: 4px 15px;
+}
+
+.md blockquote, .res.res-nightmode .md blockquote {
+    display: block;
+    padding: 15px 40px 15px 30px;
+    margin: 0 0 20px 0;
+    position: relative;
+    border-left: 3px solid #4AABD3;
+    background: rgba(255,255,255,0.05);
 }

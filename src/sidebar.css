@@ -317,16 +317,16 @@ form.toggle.res-sr-style-toggle {
     align-items: center;
 }
 
-.res .res-sr-style-toggle label {
+.res .res-sr-style-toggle label, .sr_style_toggle label {
     color: rgba(0,0,0,0.35);
 }
 
-.res .res-sr-style-toggle input[type=checkbox] {
+.res .res-sr-style-toggle input[type=checkbox], .sr_style_toggle input[type=checkbox] {
     display: none;
 }
 
-.res .res-sr-style-toggle label:before {
-    content: '?';
+.res .res-sr-style-toggle label:before, .sr_style_toggle label:before {
+    content: '✓';
     display: inline-block;
     font-weight: bold;
     height: 16px;

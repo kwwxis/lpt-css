@@ -149,13 +149,16 @@
 .res.res-nightmode .RESUserTag .userTagLink:after {
     color: hsla(230,15%,54%,1);
 }
-.res.res-nightmode body.mod-toolbox .tb-bracket-button {
+
+.res.res-nightmode body.mod-toolbox .tb-bracket-button,
+.res.res-nightmode .flair {
     background: hsla(230,15%,17%,1);
     color: hsla(230,15%,54%,1);
 }
 
 .res.res-nightmode .userattrs>a {
-    color: white;
+    color: #22242f;
+    font-weight: bold;
 }
 
 
@@ -200,6 +203,7 @@
     border: 0 !important;
 }
 
+.res.res-nightmode .comment,
 .res.res-nightmode .commentarea .comment,
 .res.res-nightmode .commentarea .comment .comment .comment,
 .res.res-nightmode .commentarea .comment .comment .comment .comment .comment,
@@ -266,4 +270,197 @@
 
 .res.res-nightmode .submit-page .roundfield>.title {
     color: hsla(230,15%,55%,1);
+}
+
+/* checkboxes */
+
+.res.res-nightmode .res-sr-style-toggle label:before,
+.res.res-nightmode .sr_style_toggle label:before {
+    background: rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.5);
+}
+
+.res.res-nightmode .res-sr-style-toggle label,
+.res.res-nightmode .sr_style_toggle {
+    color: rgba(255,255,255,0.6);
+}
+
+/* coment page stuff  */
+
+.res.res-nightmode .comment.RES-keyNav-activeThing>.entry.RES-keyNav-activeElement .md-container {
+    background: hsla(225,67%,96%,0.03) !important;
+}
+
+.res.res-nightmode .gold-accent.comment-visits-box, .res.res-nightmode .gold-accent.comment-visits-box .title {
+    background: hsla(231,16%,19%,1);
+    color: #fbefb9;
+}
+
+.res.res-nightmode .commentingAs,
+.res.res-nightmode .usertext .help-toggle a,
+.res.res-nightmode .usertext a.reddiquette,
+.res.res-nightmode .RESBigEditorPop,
+.res.res-nightmode body.mod-toolbox a.tb-loadFlat.tb-general-button,
+.res.res-nightmode .RESSubscriptionButton#REScommentSubToggle {
+    color: rgba(255,255,255,0.4);
+    background: transparent;
+}
+.res.res-nightmode .usertext .help-toggle:hover,
+.res.res-nightmode .usertext a.reddiquette:hover,
+.res.res-nightmode .RESBigEditorPop:hover,
+.res.res-nightmode body.mod-toolbox a.tb-loadFlat.tb-general-button:hover,
+.res.res-nightmode .RESSubscriptionButton#REScommentSubToggle:hover {
+    background: rgba(255,255,255,0.04);
+}
+
+.res.res-nightmode #REScommentNavToggle span:before {
+    color: rgba(255,255,255,0.4);
+}
+
+/* drop choices */
+.res.res-nightmode .dropdown.lightdrop ~ .drop-choices {
+    background: hsla(231,16%,25%,1);
+    border:0;
+}
+
+.res.res-nightmode .dropdown.lightdrop ~ .drop-choices a.choice {
+    color: hsla(231,16%,60%,1);
+}
+.res.res-nightmode .dropdown.lightdrop ~ .drop-choices a.choice:hover {
+    background: rgba(255,255,255,0.05);
+}
+
+.res.res-nightmode .dropdown.lightdrop .selected:hover {
+    background: rgba(255,255,255,0.04);
+}
+
+/* menuarea */
+.res.res-nightmode .content[role=main]>.menuarea {
+    background: #22242f;
+    border:0
+}
+
+/* cancel button */
+.res.res-nightmode .usertext button.cancel {
+    background-color: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.05);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.5);
+}
+
+/* markdown */
+.res.res-nightmode .thing .md hr {
+    border-color: rgba(255,255,255,0.15);
+}
+.res.res-nightmode .md th {
+    color: inherit;
+}
+
+/* toolbox macro button */
+.res.res-nightmode .mod-toolbox select.tb-top-macro-select.tb-action-button,
+.res.res-nightmode .mod-toolbox .content select.tb-action-button {
+    background-color: hsla(228,15%,22%,1) !important;
+    border-color: hsla(228,15%,24%,1) !important;
+    color: rgba(255,255,255,0.5) !important;
+}
+
+/* gold highlight */
+.res.res-nightmode .comment.RES-keyNav-activeThing>.entry.RES-keyNav-activeElement .md-container {
+    background: hsla(225,67%,96%,0.03) !important;
+}
+
+.res.res-nightmode .gold-accent.comment-visits-box, .res.res-nightmode .gold-accent.comment-visits-box .title {
+    background: hsla(231,16%,17%,1);
+    color: rgba(255,255,255,0.25);
+    font-weight: normal;
+}
+
+.res.res-nightmode select#comment-visits {
+    background: rgba(255,255,255,0.05);
+    color: rgba(255,255,255,0.45);
+}
+
+/* active element */
+.res.res-nightmode .comment.RES-keyNav-activeThing>.entry.RES-keyNav-activeElement .md-container {
+    background: hsla(225,67%,96%,0.03) !important;
+}
+
+/* search */
+
+.res.res-nightmode .side #search input[type=text]:hover {
+    background: rgba(255,255,255,0.03);
+}
+
+.res.res-nightmode .side #search input[type=text]:focus {
+    background: rgba(255,255,255,0.05);
+}
+
+.res.res-nightmode #searchexpando:before,
+.res.res-nightmode #searchexpando {
+    background: hsla(231,19%,21%,1);
+}
+
+/* link flair */
+.res.res-nightmode .link.linkflair .midcol:before {
+    background: #333645;
+}
+
+/* search page */
+
+.res.res-nightmode .combined-search-page #previoussearch,
+.res.res-nightmode .combined-search-page #search {
+    background: #22242f;
+    border: 0;
+}
+
+.res.res-nightmode ul.res-search-tabs {
+    background: #272935;
+    border: 0;
+}
+
+.res.res-nightmode .combined-search-page .content[role="main"]>.search-result-listing>.search-result-group {
+    border-top-color: #1e202c;
+    border: 0;
+}
+
+.res.res-nightmode .search-result-group {
+    background: #22242f;
+    border: 0;
+}
+
+.res.res-nightmode .combined-search-page .search-result-group .contents {
+    background: #272935;
+    border: 0;
+}
+
+.res.res-nightmode .combined-search-page .search-result-group .search-result {
+    border-bottom-color: hsla(231,15%,24%,1);
+}
+
+.res.res-nightmode .combined-search-page #search input[type=text] {
+    background: hsla(231,15%,24%,1);
+    border-color: hsla(231,15%,30%,1) !important;
+    color: white !important;
+}
+
+.res.res-nightmode .combined-search-page #search .c-btn-primary.c-btn {
+    background: hsla(231,15%,30%,1);
+}
+
+.res.res-nightmode .combined-search-page .search-icon:before {
+    border-color: hsla(231,15%,55%,1);
+}
+
+.res.res-nightmode .combined-search-page .search-icon:after {
+    background: hsla(231,15%,55%,1);
+}
+
+.res.res-nightmode ul.res-search-tabs li a {
+    background: hsla(231,15%,20%,1);
+}
+
+
+.res.res-nightmode ul.res-search-tabs li.res-search-tab-active a,
+.res.res-nightmode .combined-search-page #previoussearch .res-search-pane {
+    background: hsla(231,15%,15%,1);
 }

@@ -3,7 +3,8 @@
 * Comment Page
 *********************************************************************************/
 
-.commentarea {
+.commentarea,
+.commentarea > .sitetable {
     margin-top: 10px;
 }
 
@@ -21,7 +22,6 @@
 
 .commentarea > .usertext {
     border-top: 0;
-    border-bottom: 0;
 }
 
 .panestack-title, .comment-permalink-page .commentarea > .menuarea {
@@ -58,6 +58,44 @@
     clear: left;
 }
 
+
+/* panestack title
+--------------------------------------------------------------------------------*/
+.panestack-title {
+    padding: 0 10px;
+    height: 46px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.panestack-title > .title {
+    margin: 0 20px 0 0;
+    font-family: "Segoe UI",Segoe,Roboto,"Helvetica Neue",Helvetica,"Calibri Light",Calibri,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    color: hsla(196,24%,70%,1);
+}
+
+/* and buttons */
+body.mod-toolbox a.tb-loadFlat.tb-general-button,
+.res .RESSubscriptionButton  {
+    display: inline-block;
+    border: 0;
+    background: none;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 5px;
+    color: rgba(0,0,0,0.45)
+}
+
+body.mod-toolbox a.tb-loadFlat.tb-general-button:hover,
+.res .RESSubscriptionButton:hover {
+    background: rgba(0,0,0,0.06);
+}
+
 /* comment visits box
 --------------------------------------------------------------------------------*/
 
@@ -69,7 +107,7 @@
     width: 100%;
     max-width: none !important;
     box-sizing: border-box;
-    border-bottom: 0;
+    border-top: 0;
 }
 
 .gold-accent.comment-visits-box .title {
@@ -109,7 +147,7 @@ select#comment-visits {
     color: rgba(0,0,0,0.55);
 }
 .res #REScommentNavToggle span:after {
-    content: '?';
+    content: '∨';
     font-size: 7px;
     margin-left: 3px;
     font-weight: bold;

@@ -415,6 +415,24 @@
     box-shadow: 0 4px 2px -2px hsla(199, 98%, 48%,0.15);
 }
 
+/* beauty */
+.link.linkflair-beauty:after, .flairselector .linkflair-beauty, .flairselector .linkflair-beauty:before {
+    background-position: -409.5px -264.5px;
+    background-color: hsla(291,100%,75%,1);
+}
+.link.linkflair-beauty, .link.linkflair-beauty .midcol:before {
+    border-color: hsla(291,100%,75%,1);
+}
+.res .link.linkflair-beauty > .parent:after {
+    border-left-color: hsla(291,100%,75%,1);
+}
+.link.linkflair-beauty .linkflairlabel {
+    color: hsla(291,100%,75%,1);
+}
+.link.linkflair-beauty {
+    box-shadow: 0 4px 2px -2px hsla(291,100%,75%,0.16);
+}
+
 /********************************************************************************
 * Flair Selector
 *********************************************************************************/

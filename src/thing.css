@@ -247,6 +247,7 @@
     line-height: 14px;
     font-size: 9px;
     text-align: center;
+    font-family: "Segoe UI",Segoe,Roboto,"Helvetica Neue",Helvetica,"Calibri Light",Calibri,sans-serif;
 }
 
 .userattrs > a.submitter {
@@ -285,11 +286,76 @@
     border-radius: 0;
 }
 
+.flair, .res.res-nightmode .flair {
+    background-color: rgba(0,0,0,0.06);
+    border: 0;
+    height: 14px;
+    line-height: 14px;
+    padding: 0 3px;
+    border-radius: 0;
+}
+
 /* link buttons
 --------------------------------------------------------------------------------*/
 .entry .buttons li[title*="removed"] {
     color: hsla(356,100%,68%,1);
 }
+
+/* expando button
+--------------------------------------------------------------------------------*/
+
+.expando-button {
+    background-image: none !important;
+    border: 1.5px solid #d0d1d5;
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: relative;
+    transition: background 200ms;
+}
+.expando-button:before, .expando-button:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 2px;
+    background: #d0d1d5;
+    top: 0.5px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    transition: transform 200ms, background 200ms;
+}
+
+.expando-button:before {
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+}
+
+.expando-button:after {
+    -webkit-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+}
+
+.expando-button.expanded:before {
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+}
+
+.expando-button.expanded:after {
+    -webkit-transform: rotateZ(135deg);
+    transform: rotateZ(135deg);
+}
+
+.expando-button:hover {
+    background: hsla(228,6%,96%,1);
+}
+.expando-button:hover:before, .expando-button:hover:after {
+    background: hsla(228,6%,70%,1);
+}
+
 
 /* link ads
 --------------------------------------------------------------------------------*/
@@ -314,6 +380,10 @@
 }
 .res .link:not(.linkflair).stickied.RES-keyNav-activeThing {
     border-right-color: #71E096;
+}
+
+.thing.link.stickied .entry li .comments, .thing.link.stickied a.title {
+    color: #28b858;
 }
 
 /* modpick
@@ -352,8 +422,12 @@ body.mod-toolbox .tb-bracket-button {
     display: inline-block;
     background-color: rgba(0,0,0,0.06);
     height: 14px;
-    width: 14px;
+    min-width: 14px;
     line-height: 14px;
+}
+
+body.mod-toolbox .tb-bracket-button#add-user-tag[title] {
+    padding: 0 3px;
 }
 
 /* queue tool menu
