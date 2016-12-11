@@ -72,6 +72,8 @@
 .res.res-commentBoxes #bottom-comments > .sitetable > .comment {
     padding: 10px 10px 0px 18px !important;
     border: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 .res.res-commentBoxes.res-continuity .comment div.child {
     border-left: 0 !important;

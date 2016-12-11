@@ -4,13 +4,21 @@
 *********************************************************************************/
 
 .side .spacer {margin: 0;}
-.ad300x250, #ad_main_top { margin: 13px 0; }
+
+#ad_main_top {
+    border: 4px solid #eaf0f2;
+    border-left: 0;
+    border-right: 0;
+    padding: 5px 0;
+    margin: 13px 0 13px 0;
+}
 
 .titlebox {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
     flex-direction: column;
+    padding-top: 4px;
 }
 
 .titlebox > * {
@@ -21,6 +29,21 @@
 .titlebox > .subButtons, .titlebox > .fancy-toggle-button.subscribe-button.toggle {
     -webkit-order: 1;
     order: 1;
+}
+.titlebox > .users-online {
+    -webkit-order: 2;
+    order: 2;
+}
+.titlebox > .sr_style_toggle, .titlebox > .res-sr-style-toggle {
+    -webkit-order: 3;
+    order: 3;
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.titlebox > .leavecontributor-button , .titlebox > .leavemoderator {
+    -webkit-order: 4;
+    order: 4;
 }
 
 .titlebox > h1 {
@@ -127,6 +150,62 @@
     margin-bottom: -2px;
 }
 
+/* sidebar login form
+--------------------------------------------------------------------------------*/
+.login-form-side, .login-form-side .submit button {
+    font-family: Segoe,"Segoe UI",Verdana,Arial,sans-serif;
+}
+
+.login-form-side {
+    margin-top: 20px;
+    background-color: #EFF7FF;
+    border: 0;
+    font-size: 11px;
+    padding: 2px;
+    position: relative;
+}
+
+.login-form-side:before {
+    content: 'Login';
+    display: block;
+    margin: 6px 3px 0 5px;
+    padding-bottom: 2px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.6);
+    letter-spacing: 0.3px;
+    border-bottom: 1px solid rgba(0,0,0,0.17);
+}
+
+.login-form-side .submit button {
+    display: block;
+    border: 0;
+    background: rgba(0,0,0,0.07);
+    color: #777;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 15px;
+    right: 5px;
+    transition: all 200ms;
+}
+.login-form-side .submit button:hover {
+    background: #3daaf5;
+    color: white;
+}
+
+.login-form-side input[type=text], .login-form-side input[type=password] {
+    font-family: Segoe,"Segoe UI",Verdana,Arial,sans-serif;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.login-form-side #remember-me {
+    float: none;
+    margin-top: 0;
+    padding: 2px 5px;
+    background: rgba(0,0,0,0.03);
+    max-width: 223px;
+}
+
 /* linkinfo
 --------------------------------------------------------------------------------*/
 .linkinfo {
@@ -180,7 +259,7 @@
 .submit-text .morelink, .res.res-nightmode .submit-text .morelink, .res.res-nightmode .submit-text .morelink:hover {
     position: absolute;
     top: 354px;
-    right: 80px;
+    right: 81.5px;
     z-index: 99;
     width: 240px;
     margin: 0 auto;
@@ -225,12 +304,13 @@
 }
 
 .submit.submit-link .morelink {
-    position: relative;
+    display: none;
+    /*position: relative;
     text-transform: uppercase;
     letter-spacing: 0.1px;
     border-radius: 3px;
     max-width: 190px;
-    margin: 0 auto;
+    margin: 5px auto;
     line-height: 36px;
     height: 36px;
     box-sizing: border-box;
@@ -241,7 +321,7 @@
     border: 1px solid rgba(0,0,0,0.12);
     max-width: 210px;
     line-height: 32px;
-    height: 32px;
+    height: 32px;*/
 }
 
 .submit.submit-link .morelink:hover {
@@ -259,6 +339,30 @@
 .submit.submit-link .morelink a {
     font-size: 10.5px !important;
     color: inherit;
+}
+
+/* create subreddit button
+--------------------------------------------------------------------------------*/
+.sidebox.create .morelink {
+    background-image: none !important;
+    border: 0;
+    background: hsla(218,100%,96%,1);
+    margin-top: 10px;
+    font-weight: normal;
+    font-family: Segoe,"Segoe UI",Verdana,Arial,sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: rgba(0,0,0,0.55);
+}
+
+.sidebox.create .morelink a {
+    color: inherit;
+}
+
+.sidebox.create .morelink:hover {
+    color: rgba(0,0,0,0.55);
+    background: hsla(218,100%,95%,1);
 }
 
 /* sidecontentbox
@@ -280,8 +384,8 @@
 }
 
 .sidecontentbox a.helplink {
-    display: block;
-    float: none;
+    display: inline-block;
+    margin-top: 1px;
 }
 
 /* Recently Viewed Links
@@ -306,6 +410,13 @@
 }
 .gadget small .score {
     margin-left: 0;
+}
+
+.account-activity-box {
+    padding: 5px 0 7px;
+}
+.account-activity-box a {
+     color: rgba(0,0,0,0.6);
 }
 
 /* RES sr toggle
@@ -360,9 +471,11 @@ form.toggle.res-sr-style-toggle {
     text-align: center;
 }
 .titlebox > .users-online {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     margin-top: 2px;
     font-style: italic;
+    text-align: center;
+    color: rgba(0,0,0,0.5);
 }
 .users-online:before { display: none; }
 
@@ -373,6 +486,10 @@ form.toggle.res-sr-style-toggle {
     margin: 0;
     padding: 8px 0 10px 0;
     text-align: center;
+}
+
+.subButtons {
+    padding-top: 0 !important;
 }
 
 .subButtons {
@@ -392,29 +509,33 @@ form.toggle.res-sr-style-toggle {
     display: inline-block;
     height: 24px;
     line-height: 24px;
-    color: #767676;
+    color: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.06);
     padding: 0 8px;
     border: 0;
-    border-radius: 2px;
+    border-radius: 0;
     box-sizing: border-box;
+    min-width: 84px;
     text-align: center;
     margin: 0;
-    border: 1px solid;
-    background: transparent;
 }
 
 .res .res-fancy-toggle-button {
     margin-left: 5px;
 }
 
-.RESshortcutside.remove, .RESDashboardToggle.remove {
-    border-color: #b44 !important;
-    color: #b44 !important;
+.RESshortcutside.remove:hover, .RESDashboardToggle.remove:hover {
+    background-color: #c0392b !important;
+    color: #fff !important;
 }
 
-.RESshortcutside, .RESDashboardToggle {
-    border-color: #79B54F !important;
-    color: #79B54F !important;
+.RESshortcutside:hover, .RESDashboardToggle:hover {
+    background-color: #2ecc71 !important;
+    color: #fff !important;
+}
+
+.titlebox span.multi-count {
+    display: none;
 }
 
 /* misc */
@@ -425,6 +546,39 @@ form.toggle.res-sr-style-toggle {
 
 .titlebox form.leavecontributor-button:before, .titlebox .leavemoderator:before {
     display: none;
+}
+
+.leavecontributor-button .option.main,
+.leavemoderator {
+    font-size: 0;
+}
+
+.leavecontributor-button .option.main:before,
+.leavecontributor-button .option.main a,
+.side .titlebox .leavemoderator:before,
+.leavemoderator a {
+    font-size: 10px;
+    height: auto;
+    width: auto;
+    display: inline-block;
+    float: none;
+    margin-right: 4px;
+    background-image: none !important;
+    color: rgba(0,0,0,0.35);
+}
+
+.titlebox .leavemoderator:before {
+    content: 'you are a moderator here — ';
+    display: block;
+}
+
+.leavecontributor-button .option.main:before {
+    content: 'you are an approved submitter — '
+}
+
+.leavecontributor-button,
+.leavemoderator {
+    text-align: center;
 }
 
 /* subscribe button */
@@ -457,6 +611,7 @@ form.toggle.res-sr-style-toggle {
     text-align: center;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
     border: 0;
+    border-radius: 0;
     cursor: pointer;
 }
 
@@ -481,14 +636,14 @@ form.toggle.res-sr-style-toggle {
 
 /* sidebar common styles
 --------------------------------------------------------------------------------*/
-.side .md h1 {
-    border-bottom: 2px solid #7A8589;
-    color: #7A8589;
+.side .md h1, .side .md h2, .side .md h3 {
+    font-family: "Segoe UI",Segoe,Roboto,"Helvetica Neue",Helvetica,"Calibri Light",Calibri,sans-serif;
+    text-align: center;
+    text-transform: uppercase;
     font-size: 14px;
-    padding: 4px 0;
-    display: inline-block;
+    margin-top: 20px;
     margin-bottom: 5px;
-    margin-top: 10px;
+    color: #7a8589;
 }
 
 .side .md p {
@@ -496,7 +651,40 @@ form.toggle.res-sr-style-toggle {
     color: #767676;
 }
 
-/* sidebar rules
+/* What is an LPT?
+--------------------------------------------------------------------------------*/
+.side .md h1:first-of-type, .side .md h1:first-of-type + p {
+    margin: 0;
+    font-family: "Segoe UI",Segoe,Roboto,"Helvetica Neue",Helvetica,"Calibri Light",Calibri,sans-serif;
+    /* background: #FEF5D3;
+    background: #eff7ff; */
+    display: block;
+    border: 0;
+    padding: 10px;
+}
+
+.side .md h1:first-of-type {
+    padding-bottom: 7px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+.side .md h1:first-of-type + p {
+    padding-top: 0;
+    font-size: 13px;
+    line-height: 22px;
+    margin-bottom: 60px;
+}
+
+.side .md h1:first-of-type:before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: rgba(0,0,0,0.15);
+    margin: 0px auto 15px;
+}
+
+/* sidebar lists
 --------------------------------------------------------------------------------*/
 .side .md > ol {
     counter-reset: siderules;
@@ -530,15 +718,13 @@ form.toggle.res-sr-style-toggle {
     color: hsla(218,65%,70%,1);
     border-radius: 50%;
     background: hsla(218,100%,96%,1);
+    pointer-events: none;
 }
 
 .side .md > ol li p, .side .md > ul li p {
     line-height: 20px;
 }
 
-
-/* sidebar lists
---------------------------------------------------------------------------------*/
 .side .md > ul {
     list-style: none;
     padding: 0;
@@ -554,35 +740,324 @@ form.toggle.res-sr-style-toggle {
     color: #565656;
 }
 
-/* sidebar stuff and ban policy
+/* sidebar rules
 --------------------------------------------------------------------------------*/
+.side .md > h1:nth-of-type(2) {
+    text-shadow: 0px 2px 1px rgba(0,0,0,0.08);
+    font-size: 17px;
+    margin-bottom: -28px;
+}
+
+.side .md > h1 + ol {
+    margin: 0 -10px;
+    position: relative;
+    background: rgba(0,0,0,0.03);
+    padding-bottom: 10px;
+    padding-top: 35px;
+}
+
+.side .md > h1 + ol li {
+    background: transparent;
+    border: 0;
+}
+
+.side .md > ol li:before {
+    background: #FADB04;
+    color: white;
+    text-shadow: 0 2px 2px hsla(52,97%,42%,1);
+}
+
+.side .md > h1 + ol:before,
+.side .md > h1 + ol:after,
+.side .md > ul + p + h1 + p:before,
+.side .md > ul + p + h1 + p + p + p + p:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.side .md > h1 + ol:before,
+.side .md > ul + p + h1 + p:before {
+    bottom: 100%;
+    right: 0;
+    border-left: 323px solid transparent;
+    border-bottom: 40px solid rgba(0,0,0,0.03);
+}
+
+.side .md > h1 + ol:after,
+.side .md > ul + p + h1 + p + p + p + p:after {
+    top: 100%;
+    left: 0;
+    border-right: 323px solid transparent;
+    border-top: 40px solid rgba(0,0,0,0.03);
+}
+
+/* sidebar disallowed tips
+--------------------------------------------------------------------------------*/
+.side .md > h1:nth-of-type(3) {
+    margin-top: 50px;
+}
+.side .md > h1:nth-of-type(3) + p {
+    text-align: center;
+    color: rgba(0,0,0,0.5);
+}
+
+.side .md > h1:nth-of-type(3) + p + ul {
+    padding: 10px;
+    background: #f4f7f8;
+}
+.side .md > h1:nth-of-type(3) + p + ul li {
+    border-color: rgba(0,0,0,0.04);
+    background: #f4f7f8;
+}
+.side .md > h1:nth-of-type(3) + p + ul li:last-of-type {
+    border-bottom: 0;
+}
+
 .side .md > h1 + p + ul + p {
-    background: #f5f5f5;
-    /* border: 1px solid #e3e3e3; */
     padding: 6px 14px 6px 14px;
-    border-radius: 3px;
-    background: #ffc;
-    /* border: 1px solid #e6e68e; */
     line-height: 18px;
     font-size: 11.5px;
+    color: rgba(0,0,0,0.45);
+}
+
+
+/* sidebar ban policy
+--------------------------------------------------------------------------------*/
+
+.side .md h1:nth-of-type(4) {
+    margin-top: 60px;
+    margin-bottom: -20px;
+}
+
+.side .md > ul + p + h1 + p,
+.side .md > ul + p + h1 + p + p,
+.side .md > ul + p + h1 + p + p + p,
+.side .md > ul + p + h1 + p + p + p + p
+{
+    margin: 0 -10px;
+    padding: 5px 15px;
+    background: rgba(0,0,0,0.03);
+    position: relative;
+    color: #878787;
 }
 
 .side .md > ul + p + h1 + p {
     font-size: 11.5px;
     line-height: 20px;
-    margin-bottom: 15px;
+    padding-bottom: 10px;
+    padding-top: 30px;
 }
 
-.side .md > ul + p + h1 + p + p {
-    background: hsla(0,64%,96%,1);
+.side .md > ul + p + h1 + p + p,
+.side .md > ul + p + h1 + p + p + p {
     line-height: 18px;
     font-size: 11.5px;
-    padding: 6px 14px 6px 14px;
-    border-radius: 3px;
-    margin-bottom: 15px;
 }
 
-.side .md > ul + p + h1 + p + p + p {
+.side .md > ul + p + h1 + p + p + p + p {
     font-size: 11px;
     line-height: 18px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+}
+
+.side .md>ul+p+h1+p+p+p+p a {
+    color: hsl(48, 94%, 46%);
+    font-size: 11px;
+}
+
+
+/********************************************************************************
+* SIDEBAR CATEGORY LISTING
+*********************************************************************************/
+.side .md h2 {
+    margin: 0 auto 15px;
+}
+.side .md h2 strong {
+    border-bottom: 2px solid hsla(196,6%,80%,1);
+    padding-bottom: 2px;
+    display: inline-block;
+}
+
+.side .md > h2 + ul li {
+    background: transparent;
+    border: 0;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.side .md > h2 + ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    position: relative;
+}
+
+.side .md > h2 + ul li a {
+    display: block;
+    font-family: "Segoe UI",Segoe,Roboto,"Helvetica Neue",Helvetica,"Calibri Light",Calibri,sans-serif;
+    /* border: 1px solid #EEF0F3; */
+    color: #adb1b0;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    transition: background 200ms ease;
+}
+
+.side .md > h2 + ul li a:hover {
+    background: hsla(216,17%,97%,1);
+}
+
+.side .md > h2 + ul li a:before {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-image: url(%%spritesheet%%);
+    margin: 0 auto;
+}
+
+/* category colors
+--------------------------------------------------------------------------------*/
+.side .md a[href*="flair:animals"]:before {
+    background-position: -408px -26px;
+    background-color: #795548;
+}
+.side .md a[href*="flair:automobile"]:before {
+    background-position: -471.5px -24px;
+    background-color: #3F51B5;
+}
+.side .md a[href*="flair:money"]:before {
+    background-position: -535px -24px;
+    background-color: #4CAF50;
+}
+.side .md a[href*="flair:clothing"]:before {
+    background-position: -597.5px -25px;
+    background-color: #673AB7;
+}
+.side .md a[href*="flair:school"]:before {
+    background-position: -660px -24px;
+    background-color: #FF5722;
+}
+.side .md a[href*="flair:computers"]:before {
+    background-position: -724px -26px;
+    background-color: #536DFE;
+}
+.side .md a[href*="flair:beauty"]:before {
+    background-position: -786px -24px;
+    background-color: #ec80ff;
+}
+/*---[NEXT ROW]---*/
+.side .md a[href*="flair:career"]:before {
+    background-position: -408px -72px;
+    background-color: #9C27B0;
+}
+.side .md a[href*="flair:electronics"]:before {
+    background-position: -472px -72px;
+    background-color: #2196F3;
+}
+.side .md a[href*="flair:entertainment"]:before {
+    background-position: -535px -72px;
+    background-color: #00BCD4;
+}
+.side .md a[href*="flair:travel"]:before {
+    background-position: -599px -70px;
+    background-color: #009688;
+}
+.side .md a[href*="flair:food"]:before {
+    background-position: -660px -70px;
+    background-color: #FF9800;
+}
+.side .md a[href*="flair:health"]:before {
+    background-position: -723.5px -69px;
+    background-color: #E91E63;
+}
+/*---[NEXT ROW]---*/
+.side .md a[href*="flair:home"]:before {
+    background-position: -408px -118px;
+    background-color: #8BC34A;
+}
+.side .md a[href*="flair:misc"]:before {
+    background-position: -472px -118px;
+    background-color: #9E9E9E;
+}
+.side .md a[href*="flair:parenting"]:before {
+    background-position: -535px -118px;
+    background-color: #CDDC39;
+}
+.side .md a[href*="flair:productivity"]:before {
+    background-position: -599px -118px;
+    background-color: #F44336;
+}
+.side .md a[href*="flair:requests"]:before {
+    background-position: -723.5px -118px;
+    background-color: #607D8B;
+}
+.side .md a[href*="flair:social"]:before {
+    background-position: -663px -118px;
+    background-color: #03A9F4;
+}
+
+/* modpick
+--------------------------------------------------------------------------------*/
+.side .md>h2+ul li:first-child {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 32px;
+    margin-bottom: 20px;
+}
+
+.side .md>h2+ul li:first-child a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    line-height: 32px;
+    background: rgba(0,0,0,0.06);
+    color: rgba(0,0,0,0.5);
+    font-size: 14px;
+    transition: background 200ms ease, color 200ms ease;
+}
+.side .md>h2+ul li:first-child a:hover {
+    background: #FADB04;
+    color: white;
+}
+.side .md>h2+ul li:first-child a:before {
+    display: none;
+}
+
+/********************************************************************************
+* SIDEBAR RECOMMENDED SUBREDDITS
+*********************************************************************************/
+.side .md > h3 + ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.side .md > h3 + ul li {
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%;
+    box-sizing: border-box;
+    border: 0;
+    margin-bottom: 5px;
+    background: #f4f8ff;
+}
+
+.side .md > h3 + ul li:hover {
+    background: #f0f5ff;
 }

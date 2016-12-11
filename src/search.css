@@ -2,7 +2,8 @@
 --------------------------------------------------------------------------------*/
 
 .combined-search-page #previoussearch,
-.combined-search-page .search-result-group {
+.combined-search-page .search-result-group,
+.combined-search-page .searchfacets {
     background: white;
     padding: 0;
     margin: 0;
@@ -15,9 +16,19 @@
     margin-bottom: 10px;
 }
 
-.combined-search-page .content[role="main"] > .search-result-listing > .search-result-group {
+.combined-search-page .content[role="main"] > .search-result-listing > .search-result-group,
+.combined-search-page .searchfacets {
     border: 1px solid #dfe0e4;
     border-top: 6px solid hsla(195,22%,91%,1);
+}
+
+.content >.listing.search-result-listing {
+    margin-bottom: 10px;
+}
+
+.combined-search-page.res .NERPageMarker,
+.combined-search-page.res #progressIndicator {
+    max-width: 850px;
 }
 
 /* Search area
@@ -138,21 +149,21 @@
 
 /* Search results contents
 --------------------------------------------------------------------------------*/
-.combined-search-page .search-result-group {
+.combined-search-page .search-result-group,
+.combined-search-page .searchfacets {
     background: hsla(195,22%,97%,1);
 }
 
-.combined-search-page .search-result-group .contents {
+.combined-search-page .search-result-group {
+    padding-bottom: 10px;
+}
+
+.combined-search-page .search-result-group .contents,
+.combined-search-page .search-result-group footer .nav-buttons {
     padding: 10px 20px;
     margin: 0 10px 10px 10px;
     border-radius: 3px;
     background: white;
-}
-
-.combined-search-page .search-result-group footer .nav-buttons {
-    border-top: 1px solid #dfe0e4;
-    border-bottom: 1px solid #dfe0e4;
-    padding: 20px 0;
 }
 
 .combined-search-page #previoussearch .search-result-group footer .nav-buttons {
@@ -174,6 +185,7 @@
 
 .res .combined-search-page #previoussearch .res-search-pane .search-result-group {
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .combined-search-page #previoussearch .res-search-pane .search-result-group footer .nav-buttons {
@@ -187,4 +199,13 @@
     background: white;
     padding: 10px;
     border-radius: 3px;
+}
+
+/* Search facets
+--------------------------------------------------------------------------------*/
+.combined-search-page .searchfacets {
+    margin-top: 10px;
+    padding: 10px;
+    background: white;
+    box-sizing: border-box;
 }

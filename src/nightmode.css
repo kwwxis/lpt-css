@@ -1,7 +1,26 @@
+/********************************************************************************
+* BASIC COLOR RESET
+*********************************************************************************/
 .res.res-nightmode body,
 .res.res-nightmode body:before,
 .res-nightmode #header {
     background: #333645;
+}
+
+.res.res-nightmode .content[role=main],
+.res.res-nightmode .side {
+    border-top-color: #1E202C;
+}
+
+.res.res-nightmode .content[role=main] {
+    background: transparent;
+}
+
+/********************************************************************************
+* HEADER
+*********************************************************************************/
+.res.res-nightmode .pagename a {
+    background-image: url(%%logo-white%%);
 }
 
 .res.res-nightmode #sr-header-area,
@@ -12,10 +31,20 @@
 .res.res-nightmode #header-bottom-right .user,
 .res.res-nightmode #header-bottom-right a,
 .res.res-nightmode #userbarToggle {
-    background: #1E202C;
+    background-color: #1E202C;
     color: rgba(255,255,255,0.3);
 }
-    
+
+.res.res-nightmode #header-bottom-right > ul.flat-list li > a:hover,
+.res.res-nightmode #openRESPrefs:hover,
+.res.res-nightmode #modmail:not(.havemail):hover,
+.res.res-nightmode #new_modmail:not(.havemail):hover,
+.res.res-nightmode #mail:not(.havemail):hover,
+.res.res-nightmode #RESAccountSwitcherIcon:hover,
+.res.res-nightmode #header-bottom-right .beta-hint a:hover {
+    background-color: rgba(255,255,255,0.03);
+}
+
 .res.res-nightmode .pref-lang:after {
     background-position: -8px -146px;
 }
@@ -48,15 +77,30 @@
     color: hsla(230,15%,60%,1);
 }
 
-.res.res-nightmode .content[role=main],
-.res.res-nightmode .side {
-    border-top-color: #1E202C;
+.res.res-nightmode #header .tabmenu li a:before {
+    background: hsla(231,19%,10%,1);
 }
 
-.res.res-nightmode .content[role=main] {
-    background: transparent;
+/* RES dropdown list */
+.res.res-nightmode .RESHover.RESHoverDropdownList.RESDropdownList {
+    background-color: hsla(231,16%,25%,1);
 }
 
+.res.res-nightmode .RESHover.RESHoverDropdownList.RESDropdownList li,
+.res.res-nightmode .RESDropdownList a,
+.res.res-nightmode .RESDropdownList a:visited {
+    color: rgba(255,255,255,0.5);
+}
+
+.res.res-nightmode .RESHover.RESHoverDropdownList.RESDropdownList li:hover,
+.res.res-nightmode .RESDropdownList a:hover,
+.res.res-nightmode .RESDropdownList a:visited:hover {
+    color: rgba(255,255,255,0.8) !important;
+}
+
+/********************************************************************************
+* SIDEBAR
+*********************************************************************************/
 .res.res-nightmode .side,
 .res.res-nightmode .side .sidebox.submit,
 .res.res-nightmode .side .spacer .titlebox .redditname,
@@ -66,6 +110,10 @@
     border-left: 0;
     border-bottom: 0;
     border-right: 0;
+}
+
+.res.res-nightmode #ad_main_top {
+    border-color: hsla(230,15%,28%,1);
 }
 
 .res.res-nightmode .sidecontentbox .content {
@@ -79,8 +127,8 @@
 }
 
 .res.res-nightmode .side .md>ol li:before {
-    background: hsla(230,15%,20%,1);
-    color: hsla(230,15%,60%,1);
+    background: hsla(230,15%,30%,1);
+    text-shadow: none;
 }
 
 .res.res-nightmode .side .md p {
@@ -92,15 +140,12 @@
     border-bottom-color: hsla(230,15%,60%,1);
 }
 
-.res.res-nightmode .side .md>h1+p+ul+p {
-    background: hsla(60,100%,90%,0.04);
+.res.res-nightmode .side .md ol,
+.res.res-nightmode .side .md ul,
+.res.res-nightmode .icon-menu a {
+    background: transparent;
 }
 
-.res.res-nightmode .side .md>ul+p+h1+p+p {
-    background: hsla(0,64%,96%,0.04);
-}
-
-.res-nightmode .icon-menu a,
 .res-nightmode .side .leavemoderator,
 .res-nightmode .side .leavecontributor-button,
 .res-nightmode .side .titlebox,
@@ -115,55 +160,171 @@
     color: rgba(255,255,255,0.5);
 }
 
+/* sections */
+.res.res-nightmode .side .md > h1 + ol:before,
+.res.res-nightmode .side .md > ul + p + h1 + p:before {
+    border-bottom-color: rgba(255,255,255,0.03);
+}
+.res.res-nightmode .side .md > h1 + ol:after,
+.res.res-nightmode .side .md > ul + p + h1 + p + p + p:after {
+    border-top-color: rgba(255,255,255,0.03);
+}
+.res.res-nightmode .side .md > h1 + ol,
+.res.res-nightmode .side .md > ul + p + h1 + p,
+.res.res-nightmode .side .md > ul + p + h1 + p + p,
+.res.res-nightmode .side .md > ul + p + h1 + p + p + p {
+    background: rgba(255,255,255,0.03);
+}
+.res.res-nightmode .side .md > h1:nth-of-type(3)+p+ul {
+    background: hsla(230,15%,18%,1);
+}
+
+/* linkinfo */
+.res-nightmode .side .linkinfo {
+    background-color: hsla(230,15%,18%,1);
+}
+
+/* checkboxes */
+.res.res-nightmode .res-sr-style-toggle label:before,
+.res.res-nightmode .sr_style_toggle label:before {
+    background: rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.5);
+}
+.res.res-nightmode .res-sr-style-toggle label,
+.res.res-nightmode .sr_style_toggle label {
+    color: rgba(255,255,255,0.6);
+}
+
+/* RES sub buttons */
+.res.res-nightmode .res-fancy-toggle-button {
+    color: rgba(255,255,255,0.5);
+}
+
+/* toggles */
+.res.res-nightmode .leavecontributor-button .option.main:before,
+.res.res-nightmode .leavecontributor-button .option.main a,
+.res.res-nightmode .side .titlebox .leavemoderator:before,
+.res.res-nightmode .leavemoderator a {
+    color: rgba(255,255,255,0.5);
+}
+
+/* morelink - text color */
 .res.res-nightmode .submit-text .morelink a:before {
     color: white;
 }
 
-.res.res-nightmode .linkflairlabel {
+/* morelink - create subreddit */
+.res.res-nightmode .sidebox.create .morelink {
+    background: hsla(231,14%,20%,1);
+    color: rgba(255,255,255,0.6);
+}
+.res.res-nightmode .sidebox.create .morelink:hover {
+    background: hsla(231,14%,23%,1);
+}
+
+/* categories */
+.res.res-nightmode .side .md>h2+ul li {
     background: transparent;
 }
 
-.res.res-nightmode .link, .res.res-nightmode .link.linkflair, .res.res-nightmode .link.last-clicked {
+.res.res-nightmode .side .md>h2+ul li a:hover {
+    background: rgba(255,255,255,0.05);
+}
+
+/* modpick category */
+.res.res-nightmode .side .md>h2+ul li:first-child a {
+    background: rgba(255,255,255,0.04);
+    color: rgba(255,255,255,0.5);
+}
+.res.res-nightmode .side .md>h2+ul li:first-child a:hover {
+    background: #FADB04;
+    color: white;
+}
+
+/********************************************************************************
+* LINK LISTING
+*********************************************************************************/
+
+/* menuarea */
+.res.res-nightmode .content[role=main]>.menuarea,
+.res.res-nightmode .listing-page .sitetable > .nav-buttons,
+.res.res-nightmode #progressIndicator,
+.res.res-nightmode .NERPageMarker {
+    background: #22242f;
+    border:0
+}
+
+/********************************************************************************
+* LINK
+*********************************************************************************/
+.res.res-nightmode .link,
+.res.res-nightmode .link.linkflair,
+.res.res-nightmode .link.last-clicked {
     background: hsla(230,15%,16%,1);
     border-right: 0;
     border-bottom: 0;
     border-top: 0;
 }
-
 .res.res-nightmode .link:not(.linkflair) {
     border-left-color: hsla(230,15%,20%,1);
 }
-
 .res.res-nightmode .thing.link.promoted.promotedlink {
     background: hsla(230,15%,16%,1);
 }
 
+/* midcol background */
 .res.res-nightmode .link:not(.promoted) .midcol:after {
     background: hsla(230,15%,15%,1);
 }
 
+/* score */
 .res.res-nightmode .link .score {
     color: hsla(230,15%,54%,1);
 }
 
-.res.res-nightmode .RESUserTag .userTagLink:after {
-    color: hsla(230,15%,54%,1);
+/* linkflair */
+.res.res-nightmode .linkflairlabel {
+    background: transparent;
+}
+.res.res-nightmode .link.linkflair .midcol:before {
+    background: #333645;
 }
 
+/* userattrs, toolbox, user flair, usertagger
+and other stuff that comes after the username in the tagline */
 .res.res-nightmode body.mod-toolbox .tb-bracket-button,
 .res.res-nightmode .flair {
     background: hsla(230,15%,17%,1);
     color: hsla(230,15%,54%,1);
 }
-
 .res.res-nightmode .userattrs>a {
     color: #22242f;
     font-weight: bold;
 }
+.res.res-nightmode .RESUserTag .userTagLink:after {
+    color: hsla(230,15%,54%,1);
+}
+.res.res-nightmode a.voteWeight {
+    background-color: transparent !important;
+}
 
+/********************************************************************************
+* RES FILTERLINE
+*********************************************************************************/
+.res.res-nightmode .res-filterline {
+    background: hsla(230,15%,16%,1);
+}
+.res.res-nightmode .res-filterline .res-filterline-preamble {
+    background: #1E202C;
+}
+.res.res-nightmode .res-filterline-dropdown-container {
+    box-shadow: none;
+    background: hsla(230,15%,24%,1);
+}
 
-/* footer
---------------------------------------------------------------------------------*/
+/********************************************************************************
+* FOOTER
+*********************************************************************************/
 .res.res-nightmode .footer .col li:not(.title) a,
 .res.res-nightmode a {
     color: #548dc6;
@@ -176,8 +337,9 @@
     color: rgba(255,255,255,0.25);
 }
 
-/* ------------------------------- */
-
+/********************************************************************************
+* COMMENT PAGE BACKGROUNDS
+*********************************************************************************/
 .res.res-nightmode .panestack-title,
 .res.res-nightmode .commentarea .menuarea,
 .res.res-nightmode .commentarea > .usertext,
@@ -219,15 +381,6 @@
     background: transparent;
 }
 
-.res.res-nightmode #REScommentNavToggle div {
-    background: hsla(230,15%,18%,1);
-    border-color: #1E202C;
-}
-.res.res-nightmode #REScommentNavToggle:hover span {
-    background: hsla(230,15%,18%,1);
-    border-color: #1E202C;
-}
-
 .res.res-nightmode .commentarea>.sitetable>.comment:before,
 .res.res-nightmode #bottom-comments>.sitetable>.comment:before {
     background: hsla(230,15%,35%,1);
@@ -238,6 +391,16 @@
     background: transparent !important;
 }
 
+/********************************************************************************
+* COMMENT PAGE STUFF
+*********************************************************************************/
+
+/* active comment element */
+.res.res-nightmode .comment.RES-keyNav-activeThing>.entry.RES-keyNav-activeElement .md-container {
+    background: hsla(225,67%,96%,0.03) !important;
+}
+
+/* usertext */
 .res.res-nightmode .usertext-edit textarea {
     background: hsla(230,15%,20%,1);
     border-color: hsla(230,15%,15%,1);
@@ -252,50 +415,7 @@
     background-color: hsla(230,15%,28%,1);
 }
 
-.res-nightmode .side .linkinfo {
-    background-color: hsla(230,15%,18%,1);
-}
-
-.res.res-nightmode .submit-page ul.tabmenu.formtab {
-    background: hsla(230,15%,18%,1);
-}
-
-.res.res-nightmode .submit-page .submit.content {
-    background: transparent;
-}
-
-.res.res-nightmode .content.submit .roundfield {
-    background: hsla(230,15%,18%,1);
-}
-
-.res.res-nightmode .submit-page .roundfield>.title {
-    color: hsla(230,15%,55%,1);
-}
-
-/* checkboxes */
-
-.res.res-nightmode .res-sr-style-toggle label:before,
-.res.res-nightmode .sr_style_toggle label:before {
-    background: rgba(255,255,255,0.1);
-    color: rgba(255,255,255,0.5);
-}
-
-.res.res-nightmode .res-sr-style-toggle label,
-.res.res-nightmode .sr_style_toggle {
-    color: rgba(255,255,255,0.6);
-}
-
-/* coment page stuff  */
-
-.res.res-nightmode .comment.RES-keyNav-activeThing>.entry.RES-keyNav-activeElement .md-container {
-    background: hsla(225,67%,96%,0.03) !important;
-}
-
-.res.res-nightmode .gold-accent.comment-visits-box, .res.res-nightmode .gold-accent.comment-visits-box .title {
-    background: hsla(231,16%,19%,1);
-    color: #fbefb9;
-}
-
+/* usertext buttons */
 .res.res-nightmode .commentingAs,
 .res.res-nightmode .usertext .help-toggle a,
 .res.res-nightmode .usertext a.reddiquette,
@@ -313,8 +433,18 @@
     background: rgba(255,255,255,0.04);
 }
 
+/* comment nav toggle */
 .res.res-nightmode #REScommentNavToggle span:before {
     color: rgba(255,255,255,0.4);
+}
+
+.res.res-nightmode #REScommentNavToggle div {
+    background: hsla(230,15%,18%,1);
+    border-color: #1E202C;
+}
+.res.res-nightmode #REScommentNavToggle:hover span {
+    background: hsla(230,15%,18%,1);
+    border-color: #1E202C;
 }
 
 /* drop choices */
@@ -332,12 +462,6 @@
 
 .res.res-nightmode .dropdown.lightdrop .selected:hover {
     background: rgba(255,255,255,0.04);
-}
-
-/* menuarea */
-.res.res-nightmode .content[role=main]>.menuarea {
-    background: #22242f;
-    border:0
 }
 
 /* cancel button */
@@ -369,6 +493,12 @@
     background: hsla(225,67%,96%,0.03) !important;
 }
 
+
+.res.res-nightmode .gold-accent.comment-visits-box, .res.res-nightmode .gold-accent.comment-visits-box .title {
+    background: hsla(231,16%,19%,1);
+    color: #fbefb9;
+}
+
 .res.res-nightmode .gold-accent.comment-visits-box, .res.res-nightmode .gold-accent.comment-visits-box .title {
     background: hsla(231,16%,17%,1);
     color: rgba(255,255,255,0.25);
@@ -385,8 +515,9 @@
     background: hsla(225,67%,96%,0.03) !important;
 }
 
-/* search */
-
+/********************************************************************************
+* SIDEBAR SEARCH
+*********************************************************************************/
 .res.res-nightmode .side #search input[type=text]:hover {
     background: rgba(255,255,255,0.03);
 }
@@ -400,13 +531,28 @@
     background: hsla(231,19%,21%,1);
 }
 
-/* link flair */
-.res.res-nightmode .link.linkflair .midcol:before {
-    background: #333645;
+/********************************************************************************
+* SUBMIT PAGE
+*********************************************************************************/
+.res.res-nightmode .submit-page ul.tabmenu.formtab {
+    background: hsla(230,15%,18%,1);
 }
 
-/* search page */
+.res.res-nightmode .submit-page .submit.content {
+    background: transparent;
+}
 
+.res.res-nightmode .content.submit .roundfield {
+    background: hsla(230,15%,18%,1);
+}
+
+.res.res-nightmode .submit-page .roundfield>.title {
+    color: hsla(230,15%,55%,1);
+}
+
+/********************************************************************************
+* SEARCH PAGE
+*********************************************************************************/
 .res.res-nightmode .combined-search-page #previoussearch,
 .res.res-nightmode .combined-search-page #search {
     background: #22242f;
@@ -428,7 +574,9 @@
     border: 0;
 }
 
-.res.res-nightmode .combined-search-page .search-result-group .contents {
+.res.res-nightmode .combined-search-page .search-result-group .contents,
+.res.res-nightmode .combined-search-page #previoussearch .res-search-pane .search-result-group footer .nav-buttons,
+.res.res-nightmode .combined-search-page .search-result-group footer .nav-buttons {
     background: #272935;
     border: 0;
 }
@@ -458,7 +606,6 @@
 .res.res-nightmode ul.res-search-tabs li a {
     background: hsla(231,15%,20%,1);
 }
-
 
 .res.res-nightmode ul.res-search-tabs li.res-search-tab-active a,
 .res.res-nightmode .combined-search-page #previoussearch .res-search-pane {

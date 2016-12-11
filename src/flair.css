@@ -214,7 +214,7 @@
     color: #9C27B0;
 }
 .link.linkflair-career {
-    box-shadow: 0 4px 2px -2px hsla(291, 64%, 42%,0.2);
+    box-shadow: 0 4px 2px -2px hsla(291, 64%, 42%,0.12);
 }
 
 /* electronics */
@@ -418,16 +418,16 @@
 /* beauty */
 .link.linkflair-beauty:after, .flairselector .linkflair-beauty, .flairselector .linkflair-beauty:before {
     background-position: -409.5px -264.5px;
-    background-color: hsla(291,100%,75%,1);
+    background-color: #ec80ff;
 }
 .link.linkflair-beauty, .link.linkflair-beauty .midcol:before {
-    border-color: hsla(291,100%,75%,1);
+    border-color: #ec80ff;
 }
 .res .link.linkflair-beauty > .parent:after {
-    border-left-color: hsla(291,100%,75%,1);
+    border-left-color: #ec80ff;
 }
 .link.linkflair-beauty .linkflairlabel {
-    color: hsla(291,100%,75%,1);
+    color: #ec80ff;
 }
 .link.linkflair-beauty {
     box-shadow: 0 4px 2px -2px hsla(291,100%,75%,0.16);
