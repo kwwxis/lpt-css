@@ -33,6 +33,7 @@
 --------------------------------------------------------------------------------*/
 #header-bottom-left {
     min-height: 200px;
+    height: 200px;
     display: -webkit-flex;
     display: flex;
     -webkit-align-items: flex-end;
@@ -175,6 +176,9 @@
     border: 0;
 }
 
+.beta-hint {
+    top: 0;
+}
 .beta-hint a {
     margin-top: 0;
     margin-left: -30px;

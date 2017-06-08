@@ -38,7 +38,7 @@
     padding-top: 10px;
 }
 
-.link.linkflair, .link.linkflair.last-clicked {
+.link.linkflair, .link.linkflair.last-clicked, .link.promoted.promotedlink {
     border-left-width: 2px;
     border-left-style: solid;
 }
@@ -109,7 +109,7 @@
     z-index: 3;
 }
 
-.link:not(.promoted) .midcol:after {
+.link .midcol:after {
     content: '';
     display: block;
     position: absolute;
@@ -129,6 +129,14 @@
 
 .link:not(.linkflair) .flairselectbtn {
     color: red;
+}
+
+.stamp.nsfw-stamp {
+    color: white;
+    background: #e26d81;
+    border-radius: 2px;
+    border: 0;
+    font-size: 9.5px;
 }
 
 /* rank
@@ -228,6 +236,7 @@
 }
 .arrow.downmod:before {
     background-position: left 0.5px top -1.5px;
+    opacity: 1;
 }
 
 /* tagline
@@ -316,8 +325,9 @@
     content: '';
     display: block;
     position: absolute;
-    width: 13px;
-    height: 2px;
+    background-image: none !important;
+    width: 13px !important;
+    height: 2px !important;
     background: #d0d1d5;
     top: 0.5px;
     right: 0;
@@ -356,6 +366,21 @@
     background: hsla(228,6%,70%,1);
 }
 
+.link.over18 .expando-button, .link.over18 .expando-button:hover {
+    background-image: linear-gradient(
+        45deg, rgba(255, 0, 0, 0.14902) 25%,
+        transparent 25%, transparent 50%,
+        rgba(255, 0, 0, 0.14902) 50%,
+        rgba(255, 0, 0, 0.14902) 75%,
+        transparent 75%, transparent) !important;
+    background-position: initial;
+}
+
+.link.over18 .expando-button:before,
+.link.over18 .expando-button:after {
+    background: hsla(228, 6%, 78%, 1);
+}
+
 
 /* link ads
 --------------------------------------------------------------------------------*/
@@ -363,11 +388,16 @@
 .organic-listing {
     border: 0;
 }
-
+/*
 .link.promotedlink.promoted {
-    /* border-left: 2px solid hsla(210,100%,94%,1); */
     background-color: #EFF7FF;
-}
+}*/
+/*
+.sponsored-indicator.rank {
+    bottom: 0;
+    margin: auto 0;
+    height: 16px;
+}*/
 
 /* stickied post
 --------------------------------------------------------------------------------*/
@@ -381,8 +411,7 @@
 .res .link:not(.linkflair).stickied.RES-keyNav-activeThing {
     border-right-color: #71E096;
 }
-
-.thing.link.stickied .entry li .comments, .thing.link.stickied a.title {
+.thing.link.stickied a.title {
     color: #28b858;
 }
 
@@ -444,3 +473,53 @@ body.mod-toolbox .tb-bracket-button#add-user-tag[title] {
     margin: 2px 0px 0 -6px !important;
 }
 
+/********************************************************************************
+* Mod Buttons
+*********************************************************************************/
+/*.big-mod-buttons .pretty-button[data-event-action=spam] {
+    background: #f5b5b6;
+    color: hsl(359, 55%, 34%);
+}
+.big-mod-buttons .pretty-button[data-event-action=remove] {
+    background: hsl(0, 0%, 84%);
+}
+.big-mod-buttons .pretty-button[data-event-action=approve] {
+    background: #bae5c4;
+    color: hsl(133, 46%, 34%);
+}
+.big-mod-buttons .pretty-button[data-event-action=ignorereports],
+.big-mod-buttons .pretty-button[data-event-action=unignorereports],
+.entry .pretty-button[data-event-action=unignorereports] {
+    background: #ddd;
+}
+
+.entry .pretty-button[data-event-action=unignorereports]:before {
+    content: 'un';
+}
+
+.entry .buttons li.reported-stamp {
+    padding: 0 4px;
+    background-color: #f6e69f;
+}
+
+.big-mod-buttons .pretty-button,
+.entry .buttons li.reported-stamp,
+.entry .pretty-button[data-event-action=unignorereports] {
+    display: inline-block;
+    border: 0 !important;
+    font-family: "Segoe UI",Segoe,Roboto,"Helvetica Neue",Helvetica,"Calibri Light",Calibri,sans-serif;
+    color: hsl(217, 5%, 45%);
+    font-weight: bold;
+    line-height: 18px;
+    padding: 0 6px;
+}
+
+.big-mod-buttons .pretty-button:not(:active):hover, .entry .buttons li.reported-stamp:not(:active):hover {
+    box-shadow: 0 1px 8px rgba(0,0,0,0.1);
+}
+
+ul.report-reasons {
+    color: hsl(217, 5%, 45%);
+    border-radius: 2px;
+    padding: 5px 3px;
+}*/

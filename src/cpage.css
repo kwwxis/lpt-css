@@ -39,12 +39,18 @@
     align-items: center;
     font-family: Calibri, Segoe, "Segoe UI", Verdana, Arial, sans-serif;
     font-size: 14px;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
-.menuarea > .spacer {margin-bottom: 0 !important;}
-.menuarea>.spacer+.spacer {margin-right: 0;}
+.menuarea > .spacer {margin-bottom: 0 !important;margin-right:23px;}
+.menuarea>.spacer+.spacer {margin-right: 2px;}
 
-.commentarea .menuarea .toggle a {
+.commentarea .menuarea form.toggle:first-child {
+    margin-left: 0;
+}
+
+.commentarea .menuarea .toggle a, .commentarea .menuarea .help-hoverable {
     font-size: 12px;
     display: inline-block;
     padding: 4px;
@@ -58,6 +64,34 @@
     clear: left;
 }
 
+.commentarea .menuarea .help-hoverable {
+    font-weight: bold;
+    color: gray;
+    font-size: 11px;
+    margin-left: -6px;
+}
+
+.menuarea>.spacer+.spacer {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.menuarea>.spacer+.spacer > .contest-mode.infobar.mellow {
+    margin: 10px 0 5px;
+}
+
+.commentarea .menuarea > .spacer:first-child {
+    position: relative;
+}
+
+.commentarea .menuarea > .spacer .dropdown.lightdrop ~ .drop-choices.inuse {
+    right: -4px;
+    min-width: 120px;
+}
 
 /* panestack title
 --------------------------------------------------------------------------------*/
@@ -81,7 +115,10 @@
 
 /* and buttons */
 body.mod-toolbox a.tb-loadFlat.tb-general-button,
-.res .RESSubscriptionButton  {
+.res .RESSubscriptionButton,
+#auto-load-more-comments,
+.panestack-title a.title-button,
+.res-commentNavToggle {
     display: inline-block;
     border: 0;
     background: none;
@@ -92,8 +129,27 @@ body.mod-toolbox a.tb-loadFlat.tb-general-button,
 }
 
 body.mod-toolbox a.tb-loadFlat.tb-general-button:hover,
-.res .RESSubscriptionButton:hover {
+.res .RESSubscriptionButton:hover,
+#auto-load-more-comments:hover,
+.panestack-title a.title-button:hover {
     background: rgba(0,0,0,0.06);
+}
+
+.commentarea .panestack-title a.title-button.gold {
+    border: 0;
+    border-radius: 0;
+    padding: 0 5px;
+    background: hsla(52, 100%, 90%, 1);
+    color: rgba(0,0,0,0.45);
+}
+
+.commentarea .panestack-title a.title-button.gold:hover {
+    background: hsla(52, 100%, 85%, 1);
+}
+
+#auto-load-more-comments {
+    margin: 0 0 0 8px;
+    font-size: 11px;
 }
 
 /* comment visits box
@@ -136,7 +192,7 @@ select#comment-visits {
     position: relative;
     float: left;
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 0;
     clear: none;
 }
 
@@ -218,3 +274,15 @@ select#comment-visits {
 #REScommentNavToggle div[index="18"] { margin-top: 408px; /*calc(24px * 17);*/ }
 #REScommentNavToggle div[index="19"] { margin-top: 432px; /*calc(24px * 18);*/ }
 #REScommentNavToggle div[index="20"] { margin-top: 456px; /*calc(24px * 19);*/ }
+
+.res .res-commentNavToggle-choices {
+    background: white;
+    line-height: 24px;
+    min-width: 100px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    box-shadow: none;
+    border-radius: 0;
+    font-family: "Segoe UI",Segoe,Roboto,"Helvetica Neue",Helvetica,"Calibri Light",Calibri,sans-serif;
+    box-shadow: 0 3px 2px rgba(0,0,0,0.15), 0 -1px 0 rgba(0,0,0,0.07);
+}

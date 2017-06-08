@@ -16,7 +16,7 @@
     margin-top: 9px;
 }
 
-.link.linkflair:after {
+.link.linkflair:after, .link.promoted:after {
     content: '';
     display: inline-block;
     width: 24px;
@@ -33,7 +33,7 @@
     transform: scale(0.8);
     z-index: 3;
 }
-.link.linkflair .midcol:before {
+.link.linkflair .midcol:before, .link.promoted .midcol:before {
     content: "";
     display: block;
     position: absolute;
@@ -89,7 +89,53 @@
     background-color: #FADB04;
 }
 
-/* --- linkflairs start --- */
+
+/********************************************************************************
+* Mod Post Flair & Promoted Links
+*********************************************************************************/
+.link.linkflair-mod:after {
+    background-position: -451.5px -263.5px;
+    background-color: #f1c40f;
+}
+
+.link.linkflair-mod, .link.linkflair-mod .midcol:before {
+    border-color: #f1c40f;
+}
+
+.link.linkflair-mod .linkflairlabel {
+    color: #f1c40f;
+}
+
+.thing.link.linkflair-mod a.title {
+    color: #e2b607;
+}
+
+.res .link.linkflair-mod > .parent:after {
+    border-left-color: #f1c40f;
+}
+
+
+
+.link.promoted.promotedlink {
+    border-color: #24A0ED;
+}
+
+.link.promoted.promotedlink:after {
+    background-position: -495px -263.5px;
+    background-color: #24A0ED;
+}
+
+.link.promoted.promotedlink, .link.promoted.promotedlink .midcol:before {
+    border-color: #24A0ED;
+}
+
+.link.promoted.promotedlink .rank {
+    display: none;
+}
+
+/********************************************************************************
+* Standard Flairs
+*********************************************************************************/
 
 /* animals */
 .link.linkflair-animals:after, .flairselector .linkflair-animals, .flairselector .linkflair-animals:before {

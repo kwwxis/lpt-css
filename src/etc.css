@@ -24,6 +24,13 @@ body:before {
     z-index: -1;
 }
 
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    body:before {
+        background: 0 !important;
+        background-image: -ms-linear-gradient(top, #EEEEEE 0%, #FCFCFB 100%) !important;
+    }
+}
+
 /* credit
 --------------------------------------------------------------------------------*/
 body > .debuginfo:before {

@@ -19,6 +19,7 @@ order       = [ 'etc.css',
                 'banners.css',
                 'search.css',
                 'submit.css',
+                'wiki.css',
                 'footer.css',
                 'nightmode.css',
               ]      

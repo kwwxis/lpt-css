@@ -229,10 +229,23 @@
     background: rgba(0,0,0,0.08);
 }
 
-.linkinfo .score, .linkinfo .totalvotes {
+.linkinfo .score, .linkinfo .totalvotes, .linkinfo .views {
     display: block;
     width: 175px;
     margin: 0 auto;
+}
+.linkinfo .views {
+    margin-top: 8px;
+    border-top: 1px solid rgba(0,0,0,0.08);
+    padding-top: 5px;
+}
+.linkinfo .score {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: baseline;
+    align-items: baseline;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .linkinfo .shortlink {
@@ -653,7 +666,9 @@ form.toggle.res-sr-style-toggle {
 
 /* What is an LPT?
 --------------------------------------------------------------------------------*/
-.side .md h1:first-of-type, .side .md h1:first-of-type + p {
+.side .md h1:first-of-type,
+.side .md h1:first-of-type + p,
+.side .md h1:first-of-type + p + p {
     margin: 0;
     font-family: "Segoe UI",Segoe,Roboto,"Helvetica Neue",Helvetica,"Calibri Light",Calibri,sans-serif;
     /* background: #FEF5D3;
@@ -668,11 +683,11 @@ form.toggle.res-sr-style-toggle {
     margin-top: 10px;
     font-size: 13px;
 }
-.side .md h1:first-of-type + p {
+.side .md h1:first-of-type + p,
+.side .md h1:first-of-type + p + p {
     padding-top: 0;
     font-size: 13px;
     line-height: 22px;
-    margin-bottom: 60px;
 }
 
 .side .md h1:first-of-type:before {
@@ -746,6 +761,7 @@ form.toggle.res-sr-style-toggle {
     text-shadow: 0px 2px 1px rgba(0,0,0,0.08);
     font-size: 17px;
     margin-bottom: -28px;
+    margin-top: 60px;
 }
 
 .side .md > h1 + ol {
@@ -794,6 +810,82 @@ form.toggle.res-sr-style-toggle {
     border-top: 40px solid rgba(0,0,0,0.03);
 }
 
+
+/* NO POLITICS!!!!!!
+--------------------------------------------------------------------------------*/
+.side .md h1:first-of-type + p + p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px 0;
+}
+/*.side .md h1:first-of-type + p + p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 40px -10px 0 -10px;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    position: relative;
+    background: #fadb04;
+}
+.side .md h1:first-of-type + p + p + h1 {
+    margin-top: 45px;
+}
+
+.side .md h1:first-of-type + p + p > strong:before,
+.side .md h1:first-of-type + p + p > strong:after {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.side .md h1:first-of-type + p + p > strong:before {
+    content: 'PLEASE';
+    bottom: 100%;
+    margin-bottom: 5px;
+}
+.side .md h1:first-of-type + p + p > strong:after {
+    content: 'REMEMBER';
+    top: 100%;
+    margin-top: 5px;
+}
+
+.side .md h1:first-of-type + p + p > strong {
+    color: white;
+    display: inline-block;
+    position: relative;
+    padding: 10px 0 14px 0;
+    border-top: 2px solid rgba(255,255,255,0.5);
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    text-shadow: 0 2px 2px hsla(52,97%,42%,1);
+}
+
+.side .md h1:first-of-type + p + p:before,
+.side .md h1:first-of-type + p + p:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.side .md h1:first-of-type + p + p:before {
+    bottom: 100%;
+    right: 0;
+    border-left: 323px solid transparent;
+    border-bottom: 40px solid #fadb04;
+}
+.side .md h1:first-of-type + p + p:after {
+    top: 100%;
+    left: 0;
+    border-right: 323px solid transparent;
+    border-top: 40px solid #fadb04;
+}*/
+
 /* sidebar disallowed tips
 --------------------------------------------------------------------------------*/
 .side .md > h1:nth-of-type(3) {
@@ -802,6 +894,10 @@ form.toggle.res-sr-style-toggle {
 .side .md > h1:nth-of-type(3) + p {
     text-align: center;
     color: rgba(0,0,0,0.5);
+    font-size: 11px;
+    padding: 0 50px;
+    line-height: 17px;
+    margin: 10px 0;
 }
 
 .side .md > h1:nth-of-type(3) + p + ul {
@@ -1002,6 +1098,10 @@ form.toggle.res-sr-style-toggle {
 .side .md a[href*="flair:social"]:before {
     background-position: -663px -118px;
     background-color: #03A9F4;
+}
+.side .md a[href*="#modposts"]:before {
+    background-position: -786px -71px;
+    background-color: #f1c40f;
 }
 
 /* modpick

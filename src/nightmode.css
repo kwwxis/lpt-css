@@ -265,7 +265,7 @@
     border-bottom: 0;
     border-top: 0;
 }
-.res.res-nightmode .link:not(.linkflair) {
+.res.res-nightmode .link:not(.linkflair):not(.promoted) {
     border-left-color: hsla(230,15%,20%,1);
 }
 .res.res-nightmode .thing.link.promoted.promotedlink {
@@ -273,7 +273,7 @@
 }
 
 /* midcol background */
-.res.res-nightmode .link:not(.promoted) .midcol:after {
+.res.res-nightmode .link .midcol:after {
     background: hsla(230,15%,15%,1);
 }
 
@@ -286,7 +286,8 @@
 .res.res-nightmode .linkflairlabel {
     background: transparent;
 }
-.res.res-nightmode .link.linkflair .midcol:before {
+.res.res-nightmode .link.linkflair .midcol:before,
+.res.res-nightmode .link.promoted .midcol:before {
     background: #333645;
 }
 
@@ -421,7 +422,10 @@ and other stuff that comes after the username in the tagline */
 .res.res-nightmode .usertext a.reddiquette,
 .res.res-nightmode .RESBigEditorPop,
 .res.res-nightmode body.mod-toolbox a.tb-loadFlat.tb-general-button,
-.res.res-nightmode .RESSubscriptionButton#REScommentSubToggle {
+.res.res-nightmode .RESSubscriptionButton#REScommentSubToggle,
+.res.res-nightmode #auto-load-more-comments,
+.res.res-nightmode .panestack-title a.title-button,
+.res.res-nightmode .res-commentNavToggle {
     color: rgba(255,255,255,0.4);
     background: transparent;
 }
@@ -429,7 +433,9 @@ and other stuff that comes after the username in the tagline */
 .res.res-nightmode .usertext a.reddiquette:hover,
 .res.res-nightmode .RESBigEditorPop:hover,
 .res.res-nightmode body.mod-toolbox a.tb-loadFlat.tb-general-button:hover,
-.res.res-nightmode .RESSubscriptionButton#REScommentSubToggle:hover {
+.res.res-nightmode .RESSubscriptionButton#REScommentSubToggle:hover,
+.res.res-nightmode #auto-load-more-comments:hover,
+.res.res-nightmode .panestack-title a.title-button:hover {
     background: rgba(255,255,255,0.04);
 }
 
@@ -445,6 +451,17 @@ and other stuff that comes after the username in the tagline */
 .res.res-nightmode #REScommentNavToggle:hover span {
     background: hsla(230,15%,18%,1);
     border-color: #1E202C;
+}
+
+.res.res-nightmode .res-commentNavToggle-choices {
+    background: hsla(230,15%,22%,1);
+    border-color: #1E202C;
+    color: rgba(255,255,255,0.8);
+    box-shadow: none;
+}
+
+.res.res-nightmode .res-commentNavToggle-type {
+    color: rgba(255,255,255,0.6);
 }
 
 /* drop choices */
@@ -478,6 +495,9 @@ and other stuff that comes after the username in the tagline */
 }
 .res.res-nightmode .md th {
     color: inherit;
+}
+.res.res-nightmode .md blockquote {
+    background: rgba(255,255,255,0.03);
 }
 
 /* toolbox macro button */
@@ -610,4 +630,39 @@ and other stuff that comes after the username in the tagline */
 .res.res-nightmode ul.res-search-tabs li.res-search-tab-active a,
 .res.res-nightmode .combined-search-page #previoussearch .res-search-pane {
     background: hsla(231,15%,15%,1);
+}
+
+/********************************************************************************
+* WIKI PAGE
+*********************************************************************************/
+
+.res.res-nightmode .wiki-page .wiki-page-content,
+.res.res-nightmode .wiki-page .wikititle {
+    background: #22242f;
+}
+.res.res-nightmode .wiki-page-content > em:last-of-type,
+.res.res-nightmode .wiki-page .pageactions {
+    background: #282a35;
+}
+.res.res-nightmode .wiki-page .pageactions {
+    border-color: #1e202c;
+}
+.res.res-nightmode .wiki-page .pageactions .wikiaction {
+    color: rgba(255,255,255,0.35);
+}
+.res.res-nightmode .wiki-page .pageactions .wikiaction:hover {
+    background: rgba(255,255,255,0.03);
+}
+.res.res-nightmode .wiki-page .pageactions .wikiaction-current {
+    background: rgba(255,255,255,0.04);
+}
+
+.res.res-nightmode .wiki-page .wiki-page-content .wiki>.toc>ul {
+    background: #282a35;
+    outline: 10px solid #22242f;
+}
+
+.res.res-nightmode .wiki-page .wiki-page-content .wiki>.toc>ul ul {
+    background: transparent;
+    border-color: rgba(255,255,255,0.35);
 }
