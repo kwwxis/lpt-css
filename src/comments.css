@@ -35,6 +35,7 @@
 .comment .expand:hover, .comment.collapsed .expand:hover, .comment.collapsed .tagline a.expand:hover {
     background: #f1c40f;
     color: white;
+    text-decoration: none;
 }
 
 .commentarea>.sitetable>.comment>.entry>.tagline>.expand {

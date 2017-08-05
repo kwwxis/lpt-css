@@ -243,7 +243,7 @@
     background: url(%%spritesheet%%);
     /*background-position: -8px -56px; -- white icon version */
     background-position: -367px -56px;
-    width: 24px;
+    width: 25px;
     height: 23px;
     -webkit-transform: scale(0.7);
     -moz-transform: scale(0.7);
@@ -263,6 +263,8 @@
 /* mail icon
 --------------------------------------------------------------------------------*/
 
+#message:after, #message.nohavemail:after, #message.havemail:after,
+#inbox:after, #inbox.nohavemail:after, #inbox.havemail:after,
 #mail:after, #mail.nohavemail:after, #mail.havemail:after {
     content: '';
     display: block;
@@ -281,10 +283,29 @@
     left: 0;
     margin: auto;
 }
+
+#message.havemail:after,
 #mail.havemail:after {
     background-position: -8px -31px;
 }
 
+#inbox {
+    margin-left: 1px !important;
+}
+#inbox:after {
+    height: 24px !important;
+}
+#inbox.nohavemail:after {
+    /* background-position: -8px -201px; -- white icon version */
+    background-position: -367px -201px;
+}
+#inbox.havemail:after {
+    background-position: -8px -226px;
+    /* background-position: -367px -226px; -- black icon version */
+}
+
+#message, #message.nohavemail, #message.havemail,
+#inbox, #inbox.nohavemail, #inbox.havemail,
 #mail, #mail.nohavemail, #mail.havemail {
     background-image: none !important;
     position: relative;
@@ -293,19 +314,30 @@
     top: 0;
     padding-left: 5px;
     margin-left: 5px;
+    font-size: 0 !important;
 }
-
+#message.havemail, .res.res-nightmode #message.havemail,
+#inbox.havemail, .res.res-nightmode #inbox.havemail,
 #mail.havemail, .res.res-nightmode #mail.havemail {
     background: #FF7500;
 }
+#message:not(.havemail):hover,
+#inbox:not(.havemail):hover,
 #mail:not(.havemail):hover {
     background: rgba(0,0,0,0.06);
 }
 
-.message-count {
+.message-count, .inbox-count {
     border-radius: 0;
     margin-left: 0;
+    padding: 0px 3px;
     padding-right: 5px;
+    background-color: #FF7500 !important;
+    font-weight: bold;
+    color: white !important;
+}
+.inbox-count {
+    margin-right: 5px;
 }
 
 /* Mod mail + New Modmail icon
@@ -401,8 +433,8 @@
     content: '';
     display: block;
     background: url(%%spritesheet%%);
-    /* background-position: -8px -146px; -- black icon version */
-    background-position: -367px -146px;
+    /* background-position: -8px -145px; -- black icon version */
+    background-position: -367px -145px;
     width: 24px;
     height: 23px;
     position: absolute;

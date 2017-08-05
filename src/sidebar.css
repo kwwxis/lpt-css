@@ -247,6 +247,10 @@
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 }
+.linkinfo .score .word, .linkinfo .views .unit {
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
 .linkinfo .shortlink {
     font-size: 0;
