@@ -120,3 +120,12 @@ body > .debuginfo:before {
     background: hsla(196,24%,95%,1);
     color: rgb(28,28,28);
 }
+
+.drop-choices a.RES-dropdown-button {
+    display: inline-block;
+    float: right;
+    margin: 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 10px;
+}
