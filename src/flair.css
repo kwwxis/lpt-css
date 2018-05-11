@@ -25,38 +25,15 @@
     border-radius: 50%;
     background-image: url(%%spritesheet%%);
     position: absolute;
-    left: -13px;
+    left: -15px;
     bottom: 0;
     top: 0;
     margin: auto 0;
     -webkit-transform: scale(0.8);
     transform: scale(0.8);
     z-index: 3;
+    border: 2px solid #fff;
 }
-.link.linkflair .midcol:before, .link.promoted .midcol:before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    left: -14px;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-    border-radius: 50%;
-    background: white;
-    border: 1.5px solid black;
-    -webkit-transform: scale(0.92);
-    transform: scale(0.92);
-    z-index: 2;
-}
-/*
-.comments-page .link.linkflair .midcol:before {
-    margin-top: 86.5px;
-}
-.comments-page .link.linkflair:after {
-    margin-top: 88px;
-}*/
 
 .link .linkflairlabel {
     float: left;
@@ -96,9 +73,10 @@
 .link.linkflair-mod:after {
     background-position: -451.5px -263.5px;
     background-color: #f1c40f;
+    box-shadow: 0 0 0 2px #f1c40f;
 }
 
-.link.linkflair-mod, .link.linkflair-mod .midcol:before {
+.link.linkflair-mod {
     border-color: #f1c40f;
 }
 
@@ -123,9 +101,10 @@
 .link.promoted.promotedlink:after {
     background-position: -495px -263.5px;
     background-color: #24A0ED;
+    box-shadow: 0 0 0 2px #24A0ED;
 }
 
-.link.promoted.promotedlink, .link.promoted.promotedlink .midcol:before {
+.link.promoted.promotedlink {
     border-color: #24A0ED;
 }
 
@@ -141,8 +120,9 @@
 .link.linkflair-animals:after, .flairselector .linkflair-animals, .flairselector .linkflair-animals:before {
     background-position: -409.5px -169.5px;
     background-color: #795548;
+    box-shadow: 0 0 0 2px #795548;
 }
-.link.linkflair-animals, .link.linkflair-animals .midcol:before {
+.link.linkflair-animals {
     border-color: #795548;
 }
 .res .link.linkflair-animals > .parent:after {
@@ -159,8 +139,9 @@
 .link.linkflair-automobile:after, .flairselector .linkflair-automobile, .flairselector .linkflair-automobile:before {
     background-position: -451.5px -169.5px;
     background-color: #3F51B5;
+    box-shadow: 0 0 0 2px #3F51B5;
 }
-.link.linkflair-automobile, .link.linkflair-automobile .midcol:before {
+.link.linkflair-automobile {
     border-color: #3F51B5;
 }
 .res .link.linkflair-automobile > .parent:after {
@@ -177,8 +158,9 @@
 .link.linkflair-money:after, .flairselector .linkflair-money, .flairselector .linkflair-money:before {
     background-position: -494px -169.5px;
     background-color: #4CAF50;
+    box-shadow: 0 0 0 2px #4CAF50;
 }
-.link.linkflair-money, .link.linkflair-money .midcol:before {
+.link.linkflair-money {
     border-color: #4CAF50;
 }
 .res .link.linkflair-money > .parent:after {
@@ -195,8 +177,9 @@
 .link.linkflair-clothing:after, .flairselector .linkflair-clothing, .flairselector .linkflair-clothing:before {
     background-position: -535.5px -169px;
     background-color: #673AB7;
+    box-shadow: 0 0 0 2px #673AB7;
 }
-.link.linkflair-clothing, .link.linkflair-clothing .midcol:before {
+.link.linkflair-clothing {
     border-color: #673AB7;
 }
 .res .link.linkflair-clothing > .parent:after {
@@ -213,8 +196,9 @@
 .link.linkflair-school:after, .flairselector .linkflair-school, .flairselector .linkflair-school:before {
     background-position: -577.5px -169px;
     background-color: #FF5722;
+    box-shadow: 0 0 0 2px #FF5722;
 }
-.link.linkflair-school, .link.linkflair-school .midcol:before {
+.link.linkflair-school {
     border-color: #FF5722;
 }
 .res .link.linkflair-school > .parent:after {
@@ -231,8 +215,9 @@
 .link.linkflair-computers:after, .flairselector .linkflair-computers, .flairselector .linkflair-computers:before {
     background-position: -619.5px -169.5px;
     background-color: #536DFE;
+    box-shadow: 0 0 0 2px #536DFE;
 }
-.link.linkflair-computers, .link.linkflair-computers .midcol:before {
+.link.linkflair-computers {
     border-color: #536DFE;
 }
 .res .link.linkflair-computers > .parent:after {
@@ -249,8 +234,9 @@
 .link.linkflair-career:after, .flairselector .linkflair-career, .flairselector .linkflair-career:before {
     background-position: -409.5px -201px;
     background-color: #9C27B0;
+    box-shadow: 0 0 0 2px #9C27B0;
 }
-.link.linkflair-career, .link.linkflair-career .midcol:before {
+.link.linkflair-career {
     border-color: #9C27B0;
 }
 .res .link.linkflair-career > .parent:after {
@@ -267,8 +253,9 @@
 .link.linkflair-electronics:after, .flairselector .linkflair-electronics, .flairselector .linkflair-electronics:before {
     background-position: -451px -201px;
     background-color: #2196F3;
+    box-shadow: 0 0 0 2px #2196F3;
 }
-.link.linkflair-electronics, .link.linkflair-electronics .midcol:before {
+.link.linkflair-electronics {
     border-color: #2196F3;
 }
 .res .link.linkflair-electronics > .parent:after {
@@ -285,8 +272,9 @@
 .link.linkflair-entertainment:after, .flairselector .linkflair-entertainment, .flairselector .linkflair-entertainment:before {
     background-position: -493.5px -200px;
     background-color: #00BCD4;
+    box-shadow: 0 0 0 2px #00BCD4;
 }
-.link.linkflair-entertainment, .link.linkflair-entertainment .midcol:before {
+.link.linkflair-entertainment {
     border-color: #00BCD4;
 }
 .res .link.linkflair-entertainment > .parent:after {
@@ -303,8 +291,9 @@
 .link.linkflair-travel:after, .flairselector .linkflair-travel, .flairselector .linkflair-travel:before {
     background-position: -536px -200px;
     background-color: #009688;
+    box-shadow: 0 0 0 2px #009688;
 }
-.link.linkflair-travel, .link.linkflair-travel .midcol:before {
+.link.linkflair-travel {
     border-color: #009688;
 }
 .res .link.linkflair-travel > .parent:after {
@@ -321,8 +310,9 @@
 .link.linkflair-food:after, .flairselector .linkflair-food, .flairselector .linkflair-food:before {
     background-position: -577px -200px;
     background-color: #FF9800;
+    box-shadow: 0 0 0 2px #FF9800;
 }
-.link.linkflair-food, .link.linkflair-food .midcol:before {
+.link.linkflair-food {
     border-color: #FF9800;
 }
 .res .link.linkflair-food > .parent:after {
@@ -339,8 +329,9 @@
 .link.linkflair-health:after, .flairselector .linkflair-health, .flairselector .linkflair-health:before {
     background-position: -619.5px -199.5px;
     background-color: #E91E63;
+    box-shadow: 0 0 0 2px #E91E63;
 }
-.link.linkflair-health, .link.linkflair-health .midcol:before {
+.link.linkflair-health {
     border-color: #E91E63;
 }
 .res .link.linkflair-health > .parent:after {
@@ -357,8 +348,9 @@
 .link.linkflair-home:after, .flairselector .linkflair-home, .flairselector .linkflair-home:before {
     background-position: -409.5px -232px;
     background-color: #8BC34A;
+    box-shadow: 0 0 0 2px #8BC34A;
 }
-.link.linkflair-home, .link.linkflair-home .midcol:before {
+.link.linkflair-home {
     border-color: #8BC34A;
 }
 .res .link.linkflair-home > .parent:after {
@@ -375,8 +367,9 @@
 .link.linkflair-misc:after, .flairselector .linkflair-misc, .flairselector .linkflair-misc:before {
     background-position: -451.5px -232.5px;
     background-color: #9E9E9E;
+    box-shadow: 0 0 0 2px #9E9E9E;
 }
-.link.linkflair-misc, .link.linkflair-misc .midcol:before {
+.link.linkflair-misc {
     border-color: #9E9E9E;
 }
 .res .link.linkflair-misc > .parent:after {
@@ -393,8 +386,9 @@
 .link.linkflair-parenting:after, .flairselector .linkflair-parenting, .flairselector .linkflair-parenting:before {
     background-position: -493.5px -230px;
     background-color: #CDDC39;
+    box-shadow: 0 0 0 2px #CDDC39;
 }
-.link.linkflair-parenting, .link.linkflair-parenting .midcol:before {
+.link.linkflair-parenting {
     border-color: #CDDC39;
 }
 .res .link.linkflair-parenting > .parent:after {
@@ -411,8 +405,9 @@
 .link.linkflair-productivity:after, .flairselector .linkflair-productivity, .flairselector .linkflair-productivity:before  {
     background-position: -536px -232.5px;
     background-color: #F44336;
+    box-shadow: 0 0 0 2px #F44336;
 }
-.link.linkflair-productivity, .link.linkflair-productivity .midcol:before {
+.link.linkflair-productivity {
     border-color: #F44336;
 }
 .res .link.linkflair-productivity > .parent:after {
@@ -429,8 +424,9 @@
 .link.linkflair-requests:after, .flairselector .linkflair-requests, .flairselector .linkflair-requests:before {
     background-position: -619.5px -231.5px;
     background-color: #607D8B;
+    box-shadow: 0 0 0 2px #607D8B;
 }
-.link.linkflair-requests, .link.linkflair-requests .midcol:before {
+.link.linkflair-requests {
     border-color: #607D8B;
 }
 .res .link.linkflair-requests > .parent:after {
@@ -447,8 +443,9 @@
 .link.linkflair-social:after, .flairselector .linkflair-social, .flairselector .linkflair-social:before {
     background-position: -579px -231.5px;
     background-color: #03A9F4;
+    box-shadow: 0 0 0 2px #03A9F4;
 }
-.link.linkflair-social, .link.linkflair-social .midcol:before {
+.link.linkflair-social {
     border-color: #03A9F4;
 }
 .res .link.linkflair-social > .parent:after {
@@ -465,8 +462,9 @@
 .link.linkflair-beauty:after, .flairselector .linkflair-beauty, .flairselector .linkflair-beauty:before {
     background-position: -409.5px -264.5px;
     background-color: #ec80ff;
+    box-shadow: 0 0 0 2px #ec80ff;
 }
-.link.linkflair-beauty, .link.linkflair-beauty .midcol:before {
+.link.linkflair-beauty {
     border-color: #ec80ff;
 }
 .res .link.linkflair-beauty > .parent:after {

@@ -299,9 +299,9 @@
 .res.res-nightmode .linkflairlabel {
     background: transparent;
 }
-.res.res-nightmode .link.linkflair .midcol:before,
-.res.res-nightmode .link.promoted .midcol:before {
-    background: #333645;
+.res.res-nightmode .link.linkflair:after,
+.res.res-nightmode .link.promoted:after {
+    border-color: #333645;
 }
 
 /* userattrs, toolbox, user flair, usertagger
