@@ -22,6 +22,7 @@ order       = [ 'etc.css',
                 'wiki.css',
                 'footer.css',
                 'nightmode.css',
+                'shine.css',
               ]      
                 
 # input/output variables
