@@ -5,12 +5,16 @@
 
 .side .spacer {margin: 0;}
 
-#ad_main_top {
+.side #ad_main_top, .side .ad-container, .side [id^=ad] {
     border: 4px solid #eaf0f2;
     border-left: 0;
     border-right: 0;
     padding: 5px 0;
     margin: 13px 0 13px 0;
+}
+
+.side .premium-banner-outer {
+    margin: 10px 0 5px;
 }
 
 .titlebox {
@@ -672,7 +676,10 @@ form.toggle.res-sr-style-toggle {
 --------------------------------------------------------------------------------*/
 .side .md h1:first-of-type,
 .side .md h1:first-of-type + p,
-.side .md h1:first-of-type + p + p {
+.side .md h1:first-of-type + p + p,
+.side .md h1:first-of-type + p + p + p,
+.side .md h1:first-of-type + p + p + p + p,
+.side .md h1:first-of-type + p + p + p + p + p {
     margin: 0;
     font-family: "Segoe UI",Segoe,Roboto,"Helvetica Neue",Helvetica,"Calibri Light",Calibri,sans-serif;
     /* background: #FEF5D3;
@@ -688,9 +695,12 @@ form.toggle.res-sr-style-toggle {
     font-size: 13px;
 }
 .side .md h1:first-of-type + p,
-.side .md h1:first-of-type + p + p {
+.side .md h1:first-of-type + p + p,
+.side .md h1:first-of-type + p + p + p,
+.side .md h1:first-of-type + p + p + p + p,
+.side .md h1:first-of-type + p + p + p + p + p {
     padding-top: 0;
-    font-size: 13px;
+    font-size: 13px !important;
     line-height: 22px;
 }
 
@@ -789,8 +799,8 @@ form.toggle.res-sr-style-toggle {
 
 .side .md > h1 + ol:before,
 .side .md > h1 + ol:after,
-.side .md > ul + p + h1 + p:before,
-.side .md > ul + p + h1 + p + p + p + p + p:after {
+.side .md > h1:nth-of-type(4) + p:before,
+.side .md > h1:nth-of-type(4) + p + p + p + p:after {
     content: '';
     display: block;
     position: absolute;
@@ -799,7 +809,7 @@ form.toggle.res-sr-style-toggle {
 }
 
 .side .md > h1 + ol:before,
-.side .md > ul + p + h1 + p:before {
+.side .md > h1:nth-of-type(4) + p:before {
     bottom: 100%;
     right: 0;
     border-left: 323px solid transparent;
@@ -807,7 +817,7 @@ form.toggle.res-sr-style-toggle {
 }
 
 .side .md > h1 + ol:after,
-.side .md > ul + p + h1 + p + p + p + p + p:after {
+.side .md > h1:nth-of-type(4) + p + p + p + p:after {
     top: 100%;
     left: 0;
     border-right: 323px solid transparent;
@@ -817,7 +827,7 @@ form.toggle.res-sr-style-toggle {
 
 /* NO POLITICS!!!!!!
 --------------------------------------------------------------------------------*/
-.side .md h1:first-of-type + p + p {
+.side .md h2:first-of-type {
     text-align: center;
     font-weight: bold;
     font-size: 18px;
@@ -911,6 +921,8 @@ form.toggle.res-sr-style-toggle {
 .side .md > h1:nth-of-type(3) + p + ul li {
     border-color: rgba(0,0,0,0.04);
     background: #f4f7f8;
+    padding: 3px 10px 3px 15px;
+    font-size: 12px;
 }
 .side .md > h1:nth-of-type(3) + p + ul li:last-of-type {
     border-bottom: 0;
@@ -924,41 +936,41 @@ form.toggle.res-sr-style-toggle {
 }
 
 
-/* sidebar ban policy
+/* sidebar ban policy (banning policy)
 --------------------------------------------------------------------------------*/
 
-.side .md h1:nth-of-type(4) {
+.side .md > h1:nth-of-type(4) {
     margin-top: 60px;
-    margin-bottom: -20px;
+    margin-bottom: -30px;
 }
 
-.side .md > ul + p + h1 + p,
-.side .md > ul + p + h1 + p + p,
-.side .md > ul + p + h1 + p + p + p,
-.side .md > ul + p + h1 + p + p + p + p,
-.side .md > ul + p + h1 + p + p + p + p + p
+.side .md > h1:nth-of-type(4) + p,
+.side .md > h1:nth-of-type(4) + p + p,
+.side .md > h1:nth-of-type(4) + p + p + p,
+.side .md > h1:nth-of-type(4) + p + p + p + p,
+.side .md > h1:nth-of-type(4) + p + p + p + p + p
 {
     margin: 0 -10px;
-    padding: 5px 15px;
+    padding: 5px 20px;
     background: rgba(0,0,0,0.03);
     position: relative;
     color: #878787;
 }
 
-.side .md > ul + p + h1 + p {
+.side .md > h1:nth-of-type(4) + p {
     font-size: 11.5px;
     line-height: 20px;
     padding-bottom: 10px;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
-.side .md > ul + p + h1 + p + p,
-.side .md > ul + p + h1 + p + p + p {
+.side .md > h1:nth-of-type(4) + p + p,
+.side .md > h1:nth-of-type(4) + p + p + p {
     line-height: 18px;
     font-size: 11.5px;
 }
 
-.side .md > ul + p + h1 + p + p + p + p + p {
+.side .md > h1:nth-of-type(4) + p + p + p + p {
     font-size: 11px;
     line-height: 18px;
     padding-top: 10px;
@@ -966,7 +978,7 @@ form.toggle.res-sr-style-toggle {
     margin-bottom: 50px;
 }
 
-.side .md > ul + p + h1 + p + p + p + p + p a {
+.side .md > h1:nth-of-type(4) + p + p + p + p a {
     color: hsl(48, 94%, 46%);
     font-size: 11px;
 }
