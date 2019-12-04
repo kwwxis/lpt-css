@@ -477,6 +477,26 @@
     box-shadow: 0 4px 2px -2px hsla(291,100%,75%,0.16);
 }
 
+
+/* removed */
+.link.linkflair-removed:after, .flairselector .linkflair-removed, .flairselector .linkflair-removed:before {
+    background-image: none;
+    background-color: #b8001f;
+    box-shadow: 0 0 0 2px #b8001f;
+}
+.link.linkflair-removed {
+    border-color: #b8001f;
+}
+.res .link.linkflair-removed > .parent:after {
+    border-left-color: #b8001f;
+}
+.link.linkflair-removed .linkflairlabel {
+    color: #b8001f;
+}
+.link.linkflair-removed {
+    box-shadow: 0 4px 2px -2px hsla(291,100%,75%,0.16);
+}
+
 /********************************************************************************
 * Flair Selector
 *********************************************************************************/
@@ -488,13 +508,15 @@
 
 .flairselector {
     position: fixed;
+    z-index: 9999;
+
 }
 .flairselector .flairoptionpane {
     max-height: 300px;
 }
 .flairselector ul {
-    width: 50% !important;
-    max-width: none;
+    width: 33% !important;
+    max-width: none !important;
 }
 .flairselector li {
     backface-visibility: hidden;
@@ -503,7 +525,7 @@
     transition: transform 200ms ease-out;
     transform-origin: center center;
     margin: 0;
-    margin-top: 3px;
+    margin-top: 7px;
     width: 100% !important;
     box-sizing: border-box;
 }
