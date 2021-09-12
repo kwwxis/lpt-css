@@ -1,0 +1,11 @@
+.comments-page .usertext-edit.md-container>.md:before {
+    content: "Remember the human; be respectful, kind and appropriate in your attitude towards other users. Hate-speech, harassment, bullying and malicious trolling of any kind will not be tolerated.";
+    display: block;
+    width: 600px;
+    padding: 10px 15px;
+    margin: 0 0 5px;
+    border: 1px solid #000000;
+    background: rgba(255,255,255,0.05);
+    color: #000000;
+    font-weight: bold;
+}

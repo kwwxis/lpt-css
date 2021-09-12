@@ -668,49 +668,41 @@ form.toggle.res-sr-style-toggle {
 }
 
 .side .md p {
-    line-height: 26px;
     color: #767676;
 }
 
-/* What is an LPT?
+/* sidebar content
 --------------------------------------------------------------------------------*/
-.side .md h1:first-of-type,
-.side .md h1:first-of-type + p,
-.side .md h1:first-of-type + p + p,
-.side .md h1:first-of-type + p + p + p,
-.side .md h1:first-of-type + p + p + p + p,
-.side .md h1:first-of-type + p + p + p + p + p {
+.side .md > p {
     margin: 0;
     font-family: "Segoe UI",Segoe,Roboto,"Helvetica Neue",Helvetica,"Calibri Light",Calibri,sans-serif;
-    /* background: #FEF5D3;
-    background: #eff7ff; */
     display: block;
     border: 0;
-    padding: 10px;
-}
-
-.side .md h1:first-of-type {
-    padding-bottom: 7px;
-    margin-top: 10px;
+    padding: 0 10px 5px;
+    line-height: 20px;
     font-size: 13px;
 }
-.side .md h1:first-of-type + p,
-.side .md h1:first-of-type + p + p,
-.side .md h1:first-of-type + p + p + p,
-.side .md h1:first-of-type + p + p + p + p,
-.side .md h1:first-of-type + p + p + p + p + p {
-    padding-top: 0;
-    font-size: 13px !important;
-    line-height: 22px;
-}
 
-.side .md h1:first-of-type:before {
+.side .md > p:first-child:before {
     content: '';
     display: block;
     width: 40px;
     height: 1px;
     background: rgba(0,0,0,0.15);
-    margin: 0px auto 15px;
+    margin: 15px auto 15px;
+}
+
+.side .md > p > strong {
+    color: #333;
+}
+.side .md > p:first-child > strong {
+  font-weight: bold;
+  font-size: 14px;
+  color: #555;
+}
+.side .md > hr + p > strong {
+  font-size: 17px;
+    color: #666;
 }
 
 /* sidebar lists
@@ -750,6 +742,12 @@ form.toggle.res-sr-style-toggle {
     pointer-events: none;
 }
 
+.side .md>ol li:before {
+  background: #fadb04;
+  color: white;
+  text-shadow: 0 2px 2px hsl(52deg 97% 42%);
+}
+
 .side .md > ol li p, .side .md > ul li p {
     line-height: 20px;
 }
@@ -767,414 +765,4 @@ form.toggle.res-sr-style-toggle {
     font-size: 11px;
     line-height: 20px;
     color: #565656;
-}
-
-/* sidebar rules
---------------------------------------------------------------------------------*/
-.side .md > h1:nth-of-type(2) {
-    text-shadow: 0px 2px 1px rgba(0,0,0,0.08);
-    font-size: 17px;
-    margin-bottom: -28px;
-    margin-top: 60px;
-}
-
-.side .md > h1 + ol {
-    margin: 0 -10px;
-    position: relative;
-    background: rgba(0,0,0,0.03);
-    padding-bottom: 10px;
-    padding-top: 35px;
-}
-
-.side .md > h1 + ol li {
-    background: transparent;
-    border: 0;
-}
-
-.side .md > ol li:before {
-    background: #FADB04;
-    color: white;
-    text-shadow: 0 2px 2px hsla(52,97%,42%,1);
-}
-
-.side .md > h1 + ol:before,
-.side .md > h1 + ol:after,
-.side .md > h1:nth-of-type(4) + p:before,
-.side .md > h1:nth-of-type(4) + p + p + p + p:after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 0;
-    height: 0;
-}
-
-.side .md > h1 + ol:before,
-.side .md > h1:nth-of-type(4) + p:before {
-    bottom: 100%;
-    right: 0;
-    border-left: 323px solid transparent;
-    border-bottom: 40px solid rgba(0,0,0,0.03);
-}
-
-.side .md > h1 + ol:after,
-.side .md > h1:nth-of-type(4) + p + p + p + p:after {
-    top: 100%;
-    left: 0;
-    border-right: 323px solid transparent;
-    border-top: 40px solid rgba(0,0,0,0.03);
-}
-
-
-/* NO POLITICS!!!!!!
---------------------------------------------------------------------------------*/
-.side .md h2:first-of-type {
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    margin: 20px 0;
-}
-/*.side .md h1:first-of-type + p + p {
-    text-align: center;
-    font-weight: bold;
-    font-size: 30px;
-    margin: 40px -10px 0 -10px;
-    padding-top: 35px;
-    padding-bottom: 40px;
-    position: relative;
-    background: #fadb04;
-}
-.side .md h1:first-of-type + p + p + h1 {
-    margin-top: 45px;
-}
-
-.side .md h1:first-of-type + p + p > strong:before,
-.side .md h1:first-of-type + p + p > strong:after {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    font-size: 14px;
-    opacity: 0.7;
-}
-
-.side .md h1:first-of-type + p + p > strong:before {
-    content: 'PLEASE';
-    bottom: 100%;
-    margin-bottom: 5px;
-}
-.side .md h1:first-of-type + p + p > strong:after {
-    content: 'REMEMBER';
-    top: 100%;
-    margin-top: 5px;
-}
-
-.side .md h1:first-of-type + p + p > strong {
-    color: white;
-    display: inline-block;
-    position: relative;
-    padding: 10px 0 14px 0;
-    border-top: 2px solid rgba(255,255,255,0.5);
-    border-bottom: 2px solid rgba(255,255,255,0.5);
-    text-shadow: 0 2px 2px hsla(52,97%,42%,1);
-}
-
-.side .md h1:first-of-type + p + p:before,
-.side .md h1:first-of-type + p + p:after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 0;
-    height: 0;
-}
-.side .md h1:first-of-type + p + p:before {
-    bottom: 100%;
-    right: 0;
-    border-left: 323px solid transparent;
-    border-bottom: 40px solid #fadb04;
-}
-.side .md h1:first-of-type + p + p:after {
-    top: 100%;
-    left: 0;
-    border-right: 323px solid transparent;
-    border-top: 40px solid #fadb04;
-}*/
-
-/* sidebar disallowed tips
---------------------------------------------------------------------------------*/
-.side .md > h1:nth-of-type(3) {
-    margin-top: 50px;
-}
-.side .md > h1:nth-of-type(3) + p {
-    text-align: center;
-    color: rgba(0,0,0,0.5);
-    font-size: 11px;
-    padding: 0 50px;
-    line-height: 17px;
-    margin: 10px 0;
-}
-
-.side .md > h1:nth-of-type(3) + p + ul {
-    padding: 10px;
-    background: #f4f7f8;
-}
-.side .md > h1:nth-of-type(3) + p + ul li {
-    border-color: rgba(0,0,0,0.04);
-    background: #f4f7f8;
-    padding: 3px 10px 3px 15px;
-    font-size: 12px;
-}
-.side .md > h1:nth-of-type(3) + p + ul li:last-of-type {
-    border-bottom: 0;
-}
-
-.side .md > h1 + p + ul + p {
-    padding: 6px 14px 6px 14px;
-    line-height: 18px;
-    font-size: 11.5px;
-    color: rgba(0,0,0,0.45);
-}
-
-
-/* sidebar ban policy (banning policy)
---------------------------------------------------------------------------------*/
-
-.side .md > h1:nth-of-type(4) {
-    margin-top: 60px;
-    margin-bottom: -30px;
-}
-
-.side .md > h1:nth-of-type(4) + p,
-.side .md > h1:nth-of-type(4) + p + p,
-.side .md > h1:nth-of-type(4) + p + p + p,
-.side .md > h1:nth-of-type(4) + p + p + p + p,
-.side .md > h1:nth-of-type(4) + p + p + p + p + p
-{
-    margin: 0 -10px;
-    padding: 5px 20px;
-    background: rgba(0,0,0,0.03);
-    position: relative;
-    color: #878787;
-}
-
-.side .md > h1:nth-of-type(4) + p {
-    font-size: 11.5px;
-    line-height: 20px;
-    padding-bottom: 10px;
-    padding-top: 50px;
-}
-
-.side .md > h1:nth-of-type(4) + p + p,
-.side .md > h1:nth-of-type(4) + p + p + p {
-    line-height: 18px;
-    font-size: 11.5px;
-}
-
-.side .md > h1:nth-of-type(4) + p + p + p + p {
-    font-size: 11px;
-    line-height: 18px;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    margin-bottom: 50px;
-}
-
-.side .md > h1:nth-of-type(4) + p + p + p + p a {
-    color: hsl(48, 94%, 46%);
-    font-size: 11px;
-}
-
-
-/********************************************************************************
-* SIDEBAR CATEGORY LISTING
-*********************************************************************************/
-.side .md h2 {
-    margin: 0 auto 15px;
-}
-.side .md h2 strong {
-    border-bottom: 2px solid hsla(196,6%,80%,1);
-    padding-bottom: 2px;
-    display: inline-block;
-}
-
-.side .md > h2 + ul li {
-    background: transparent;
-    border: 0;
-    width: 50%;
-    box-sizing: border-box;
-    padding: 0;
-}
-
-.side .md > h2 + ul {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 70px;
-    position: relative;
-}
-
-.side .md > h2 + ul li a {
-    display: block;
-    font-family: "Segoe UI",Segoe,Roboto,"Helvetica Neue",Helvetica,"Calibri Light",Calibri,sans-serif;
-    /* border: 1px solid #EEF0F3; */
-    color: #adb1b0;
-    text-align: center;
-    padding-top: 8px;
-    padding-bottom: 5px;
-    transition: background 200ms ease;
-}
-
-.side .md > h2 + ul li a:hover {
-    background: hsla(216,17%,97%,1);
-}
-
-.side .md > h2 + ul li a:before {
-    content: '';
-    display: block;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background-image: url(%%spritesheet%%);
-    margin: 0 auto;
-}
-
-/* category colors
---------------------------------------------------------------------------------*/
-.side .md a[href*="flair:animals"]:before {
-    background-position: -408px -26px;
-    background-color: #795548;
-}
-.side .md a[href*="flair:automobile"]:before {
-    background-position: -471.5px -24px;
-    background-color: #3F51B5;
-}
-.side .md a[href*="flair:money"]:before {
-    background-position: -535px -24px;
-    background-color: #4CAF50;
-}
-.side .md a[href*="flair:clothing"]:before {
-    background-position: -597.5px -25px;
-    background-color: #673AB7;
-}
-.side .md a[href*="flair:school"]:before {
-    background-position: -660px -24px;
-    background-color: #FF5722;
-}
-.side .md a[href*="flair:computers"]:before {
-    background-position: -724px -26px;
-    background-color: #536DFE;
-}
-.side .md a[href*="flair:beauty"]:before {
-    background-position: -786px -24px;
-    background-color: #ec80ff;
-}
-/*---[NEXT ROW]---*/
-.side .md a[href*="flair:career"]:before {
-    background-position: -408px -72px;
-    background-color: #9C27B0;
-}
-.side .md a[href*="flair:electronics"]:before {
-    background-position: -472px -72px;
-    background-color: #2196F3;
-}
-.side .md a[href*="flair:entertainment"]:before {
-    background-position: -535px -72px;
-    background-color: #00BCD4;
-}
-.side .md a[href*="flair:travel"]:before {
-    background-position: -599px -70px;
-    background-color: #009688;
-}
-.side .md a[href*="flair:food"]:before {
-    background-position: -660px -70px;
-    background-color: #FF9800;
-}
-.side .md a[href*="flair:health"]:before {
-    background-position: -723.5px -69px;
-    background-color: #E91E63;
-}
-/*---[NEXT ROW]---*/
-.side .md a[href*="flair:home"]:before {
-    background-position: -408px -118px;
-    background-color: #8BC34A;
-}
-.side .md a[href*="flair:misc"]:before {
-    background-position: -472px -118px;
-    background-color: #9E9E9E;
-}
-.side .md a[href*="flair:parenting"]:before {
-    background-position: -535px -118px;
-    background-color: #CDDC39;
-}
-.side .md a[href*="flair:productivity"]:before {
-    background-position: -599px -118px;
-    background-color: #F44336;
-}
-.side .md a[href*="flair:requests"]:before {
-    background-position: -723.5px -118px;
-    background-color: #607D8B;
-}
-.side .md a[href*="flair:social"]:before {
-    background-position: -663px -118px;
-    background-color: #03A9F4;
-}
-.side .md a[href*="#modposts"]:before {
-    background-position: -786px -71px;
-    background-color: #f1c40f;
-}
-
-/* modpick
---------------------------------------------------------------------------------*/
-.side .md>h2+ul li:first-child {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    height: 32px;
-    margin-bottom: 20px;
-}
-
-.side .md>h2+ul li:first-child a {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 0;
-    line-height: 32px;
-    background: rgba(0,0,0,0.06);
-    color: rgba(0,0,0,0.5);
-    font-size: 14px;
-    transition: background 200ms ease, color 200ms ease;
-}
-.side .md>h2+ul li:first-child a:hover {
-    background: #FADB04;
-    color: white;
-}
-.side .md>h2+ul li:first-child a:before {
-    display: none;
-}
-
-/********************************************************************************
-* SIDEBAR RECOMMENDED SUBREDDITS
-*********************************************************************************/
-.side .md > h3 + ul {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-top: 10px;
-}
-
-.side .md > h3 + ul li {
-    width: 48%;
-    margin-left: 1%;
-    margin-right: 1%;
-    box-sizing: border-box;
-    border: 0;
-    margin-bottom: 5px;
-    background: #f4f8ff;
-}
-
-.side .md > h3 + ul li:hover {
-    background: #f0f5ff;
 }
